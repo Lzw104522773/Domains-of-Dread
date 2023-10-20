@@ -1,0 +1,19 @@
+IF
+	Global("EnterdemD1D","GLOBAL",0)
+THEN
+  RESPONSE #100
+		FadeFromColor([30.0],0)
+		SetGlobal("EnterdemD1D","GLOBAL",1)
+		MoveViewPoint([1039.638],INSTANT)
+END
+
+IF
+  Global("demD2D","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateVisualEffect("demHEOLY",[1222.1196])
+    Wait(1)
+    CreateVisualEffect("demHEOLY",[1222.1196])
+    Wait(1)
+END
+

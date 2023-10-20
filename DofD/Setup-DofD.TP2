@@ -45,171 +45,171 @@ BEGIN  @0
 
 PRINT  @1
 
-COPY ~DofD/Areas/ardem0.are~         ~override/ardem0.are~          
-COPY ~DofD/Areas/ardem1.are~        ~override/ardem1.are~
+COPY ~DofD/Areas/demD0D.are~         ~override/demD0D.are~
+COPY ~DofD/Areas/demD1D.are~        ~override/demD1D.are~
 
 PRINT  @2
 
-COPY ~DofD/Bam/HELLOLY.bam~         ~override/HELLOLY.bam~          
-COPY ~DofD/Bam/iswcr.bam~        ~override/iswcr.bam~
+COPY ~DofD/Bam/demHEOLY.bam~         ~override/demHEOLY.bam~
+COPY ~DofD/Bam/demiswc.bam~        ~override/demiswc.bam~
 
 PRINT  @3
       
-COPY ~DofD/Items/apoc.itm~          ~override/apoc.itm~           
-  SAY NAME1 @4 
-  SAY NAME2 @5 
-  SAY DESC @6 
+COPY ~DofD/Items/demapoc.itm~          ~override/demapoc.itm~
+  SAY NAME1 @4
+  SAY NAME2 @5
+  SAY DESC @6
 
-COPY ~DofD/Items/blunight.itm~      ~override/blunight.itm~       
-  SAY NAME1 @7 
-  SAY NAME2 @8 
-  SAY UNIDENTIFIED_DESC @9 
-  SAY DESC @10 
+COPY ~DofD/Items/demnight.itm~      ~override/demnight.itm~
+  SAY NAME1 @7
+  SAY NAME2 @8
+  SAY UNIDENTIFIED_DESC @9
+  SAY DESC @10
 
-COPY ~DofD/Items/cupbow.itm~        ~override/cupbow.itm~         
-  SAY NAME1 @11 
-  SAY NAME2 @12 
-  SAY UNIDENTIFIED_DESC @13 
-  SAY DESC @14 
+COPY ~DofD/Items/demcup.itm~        ~override/demcup.itm~
+  SAY NAME1 @11
+  SAY NAME2 @12
+  SAY UNIDENTIFIED_DESC @13
+  SAY DESC @14
 
-COPY ~DofD/Items/demokey.itm~       ~override/demokey.itm~        
-  SAY NAME1 @15 
-  SAY NAME2 @15 
-  SAY UNIDENTIFIED_DESC @16 
+COPY ~DofD/Items/demokey.itm~       ~override/demokey.itm~
+  SAY NAME1 @15
+  SAY NAME2 @15
+  SAY UNIDENTIFIED_DESC @16
 
-COPY ~DofD/Items/demresd.itm~       ~override/demresd.itm~        
-  SAY NAME1 @17 
-  SAY NAME2 @17 
-  SAY 0x10e @18 
+COPY ~DofD/Items/demresd.itm~       ~override/demresd.itm~
+  SAY NAME1 @17
+  SAY NAME2 @17
+  SAY 0x10e @18
 
-COPY ~DofD/Items/demresd1.itm~      ~override/demresd1.itm~       
+COPY ~DofD/Items/demresd1.itm~      ~override/demresd1.itm~
 
-COPY ~DofD/Items/demspec.itm~       ~override/demspec.itm~        
+COPY ~DofD/Items/demspec.itm~       ~override/demspec.itm~
 
-COPY ~DofD/Items/demspec1.itm~      ~override/demspec1.itm~       
-  SAY NAME1 @17 
-  SAY NAME2 @17 
-  SAY 0x10e @18 
+COPY ~DofD/Items/demspec1.itm~      ~override/demspec1.itm~
+  SAY NAME1 @17
+  SAY NAME2 @17
+  SAY 0x10e @18
 
-COPY ~DofD/Items/demtyra.itm~       ~override/demtyra.itm~        
-  SAY NAME1 @19 
-  SAY UNIDENTIFIED_DESC @20 
-  SAY DESC @21 
+COPY ~DofD/Items/demtyra.itm~       ~override/demtyra.itm~
+  SAY NAME1 @19
+  SAY UNIDENTIFIED_DESC @20
+  SAY DESC @21
 
-COPY ~DofD/Items/dracoli.itm~       ~override/dracoli.itm~        
-  SAY NAME1 @22 
+COPY ~DofD/Items/demdraco.itm~       ~override/demdraco.itm~
+  SAY NAME1 @22
  
-COPY ~DofD/Items/macter.itm~        ~override/macter.itm~         
-  SAY NAME1 @7 
-  SAY NAME2 @23 
-  SAY UNIDENTIFIED_DESC @9 
-  SAY DESC @24 
-  SAY 0x1d6 @25 
+COPY ~DofD/Items/demmater.itm~        ~override/demmater.itm~
+  SAY NAME1 @7
+  SAY NAME2 @23
+  SAY UNIDENTIFIED_DESC @9
+  SAY DESC @24
+  SAY 0x1d6 @25
 
-COPY ~DofD/Items/maskull.itm~       ~override/maskull.itm~        
-  SAY NAME1 @26 
-  SAY NAME2 @27 
-  SAY UNIDENTIFIED_DESC @28 
-  SAY DESC @29 
+COPY ~DofD/Items/demskull.itm~       ~override/demskull.itm~
+  SAY NAME1 @26
+  SAY NAME2 @27
+  SAY UNIDENTIFIED_DESC @28
+  SAY DESC @29
 
-COPY ~DofD/Items/metcrys.itm~       ~override/metcrys.itm~        
-  SAY NAME1 @30 
-  SAY NAME2 @31 
-  SAY UNIDENTIFIED_DESC @32 
-  SAY DESC @33 
+COPY ~DofD/Items/demcrys.itm~       ~override/demcrys.itm~
+  SAY NAME1 @30
+  SAY NAME2 @31
+  SAY UNIDENTIFIED_DESC @32
+  SAY DESC @33
 
-COPY ~DofD/Items/soulst.itm~        ~override/soulst.itm~         
-  SAY NAME1 @34 
-  SAY NAME2 @35 
-  SAY UNIDENTIFIED_DESC @36 
-  SAY DESC @37 
+COPY ~DofD/Items/demsoul.itm~        ~override/demsoul.itm~
+  SAY NAME1 @34
+  SAY NAME2 @35
+  SAY UNIDENTIFIED_DESC @36
+  SAY DESC @37
 
-COPY ~DofD/Items/spwi4so.itm~       ~override/spwi4so.itm~        
-  SAY NAME1 @38 
-  SAY NAME2 @38 
-  SAY DESC @39 
+COPY ~DofD/Items/demi4so.itm~       ~override/demi4so.itm~
+  SAY NAME1 @38
+  SAY NAME2 @38
+  SAY DESC @39
 
-COPY ~DofD/Items/sw1hgd.itm~        ~override/sw1hgd.itm~         
-  SAY NAME1 @40 
-  SAY NAME2 @41 
-  SAY UNIDENTIFIED_DESC @42 
-  SAY DESC @43 
+COPY ~DofD/Items/demsw1h.itm~        ~override/demsw1h.itm~
+  SAY NAME1 @40
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @43
   SAY 0x1fe @44
 
 
 PRINT  @45
 
 
-COPY ~DofD/Spells/apoc.spl~         ~override/apoc.spl~           
-  SAY NAME1 @5 
-  SAY UNIDENTIFIED_DESC @6 
+COPY ~DofD/Spells/demapoc.spl~         ~override/demapoc.spl~
+  SAY NAME1 @5
+  SAY UNIDENTIFIED_DESC @6
 
-COPY ~DofD/Spells/SPCL998.spl~      ~override/SPCL998.spl~        
-  SAY NAME1 @46 
+COPY ~DofD/Spells/SPCL998.spl~      ~override/SPCL998.spl~
+  SAY NAME1 @46
 
-COPY ~DofD/Spells/SPCL999.spl~      ~override/SPCL999.spl~        
-  SAY NAME1 @47 
+COPY ~DofD/Spells/SPCL999.spl~      ~override/SPCL999.spl~
+  SAY NAME1 @47
 
-COPY ~DofD/Spells/spwi4so.spl~      ~override/spwi4so.spl~        
-  SAY NAME1 @38 
+COPY ~DofD/Spells/demi4so.spl~      ~override/demi4so.spl~
+  SAY NAME1 @38
   SAY UNIDENTIFIED_DESC @39
 
 PRINT  @48
 
 
-COPY ~DofD/Cre/Clervamp.cre~        ~override/Clervamp.cre~       
-  SAY NAME1 @49 
-  SAY NAME2 @49 
+COPY ~DofD/Cre/demClva.cre~        ~override/demClva.cre~
+  SAY NAME1 @49
+  SAY NAME2 @49
+  WRITE_ASCII 0x280 ~demClva~ (8) // Script name / Death variable
 
-COPY ~DofD/Cre/demdark.cre~         ~override/demdark.cre~        
-  SAY NAME1 @50 
-  SAY NAME2 @50 
+COPY ~DofD/Cre/demdark.cre~         ~override/demdark.cre~
+  SAY NAME1 @50
+  SAY NAME2 @50
 
-COPY ~DofD/Cre/demdark1.cre~        ~override/demdark1.cre~       
-  SAY NAME1 @50 
-  SAY NAME2 @50 
+COPY ~DofD/Cre/demdark1.cre~        ~override/demdark1.cre~
+  SAY NAME1 @50
+  SAY NAME2 @50
 
-COPY ~DofD/Cre/demdrac.cre~         ~override/demdrac.cre~        
-  SAY NAME1 @51 
-  SAY NAME2 @51 
+COPY ~DofD/Cre/demdrac.cre~         ~override/demdrac.cre~
+  SAY NAME1 @51
+  SAY NAME2 @51
 
-COPY ~DofD/Cre/dementy.cre~         ~override/dementy.cre~        
-  SAY NAME1 @52 
-  SAY NAME2 @52 
+COPY ~DofD/Cre/dementy.cre~         ~override/dementy.cre~
+  SAY NAME1 @52
+  SAY NAME2 @52
   WRITE_ASCII 0x248 ~Demdud~ (8) // Override script
   WRITE_ASCII 0x250 ~MAGE4A~ (8) // Class cript
   WRITE_ASCII 0x258 ~SHOUT~ (8) // Race script
 
-COPY ~DofD/Cre/demport.cre~         ~override/demport.cre~        
-  SAY NAME1 @53 
-  SAY NAME2 @53 
+COPY ~DofD/Cre/demport.cre~         ~override/demport.cre~
+  SAY NAME1 @53
+  SAY NAME2 @53
 
-COPY ~DofD/Cre/demresd.cre~         ~override/demresd.cre~        
-  SAY NAME1 @54 
-  SAY NAME2 @54 
+COPY ~DofD/Cre/demresd.cre~         ~override/demresd.cre~
+  SAY NAME1 @54
+  SAY NAME2 @54
 
-COPY ~DofD/Cre/demspec.cre~         ~override/demspec.cre~        
-  SAY NAME1 @55 
-  SAY NAME2 @55 
+COPY ~DofD/Cre/demspec.cre~         ~override/demspec.cre~
+  SAY NAME1 @55
+  SAY NAME2 @55
 
-COPY ~DofD/Cre/demtyra.cre~         ~override/demtyra.cre~        
-  SAY NAME1 @56 
-  SAY NAME2 @56 
+COPY ~DofD/Cre/demtyra.cre~         ~override/demtyra.cre~
+  SAY NAME1 @56
+  SAY NAME2 @56
 
-COPY ~DofD/Cre/flyskull.cre~        ~override/flyskull.cre~       
-  SAY NAME1 @57 
-  SAY NAME2 @57 
+COPY ~DofD/Cre/demskull.cre~        ~override/demskull.cre~
+  SAY NAME1 @57
+  SAY NAME2 @57
 
-COPY ~DofD/Cre/Magvamp.cre~         ~override/Magvamp.cre~        
-  SAY NAME1 @58 
-  SAY NAME2 @58        
+COPY ~DofD/Cre/demMava.cre~         ~override/demMava.cre~
+  SAY NAME1 @58
+  SAY NAME2 @58
+  WRITE_ASCII 0x280 ~demMava~ (8) // Script name / Death variable
 
 
 PRINT @59
 
-COMPILE ~DofD\Dlg~ 
-
-COMPILE ~DofD/BAF/Demdud.baf~			~override~
+COMPILE ~DofD\Dlg~
 
 PRINT @60
 
