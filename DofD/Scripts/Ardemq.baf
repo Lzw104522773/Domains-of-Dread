@@ -1,0 +1,10 @@
+IF
+  Global("Ardemo2","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateVisualEffect("HELLOLY",[1222.1196])
+    Wait(1)
+    CreateVisualEffect("HELLOLY",[1222.1196])
+    Wait(1)
+END
+

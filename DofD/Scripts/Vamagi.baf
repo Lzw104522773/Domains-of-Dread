@@ -1,0 +1,212 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ReallyForceSpellDead(Myself,VAMPIRE_GAS_FORM_CHANGE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("VampMge","LOCALS",0)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    SetGlobal("VampMge","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("SpellTrigger","LOCALS",0)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_TELEPORT_FIELD)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    SetGlobal("SpellTrigger","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect([PC])
+  !See(LastSeenBy(Myself))
+  HaveSpell(WIZARD_TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(7)
+    StateCheck(LastSeenBy(Myself),STATE_HASTED)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    StateCheck(LastSeenBy(Myself),STATE_BLESS)
+    StateCheck(LastSeenBy(Myself),STATE_CHANT)
+    StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+    StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+  Global("PrepDef","LOCALS",0)
+THEN
+  RESPONSE #70
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_BLIND)
+    SetGlobal("PrepDef","LOCALS",1)
+  RESPONSE #30
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    SetGlobal("PrepDef","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_STONE_SKIN)
+  CheckStatLT(Myself,1,STONESKINS)
+  TookDamage()
+  Global("Magyvamp","LOCALS",0)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_PROJECT_IMAGE)
+    SetGlobal("Magyvamp","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  TookDamage()
+  Global("Magyvamp","LOCALS",1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    SetGlobal("Magyvamp","LOCALS",2)
+END
+
+IF
+  See([GOODCUTOFF.0.0.0.0.SUMMONED])
+  Global("summon","LOCALS",0)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy(Myself))
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+    SetGlobal("summon","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+  HaveSpell(WIZARD_SPELL_TURNING)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_TIME_STOP)
+  Global("Magyvamp2","LOCALS",0)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_TIME_STOP)
+    SetGlobal("Magyvamp2","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_NPC_SYMBOL_STUN)
+  Global("Magyvamp2","LOCALS",1)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_STUN)
+    SetGlobal("Magyvamp2","LOCALS",3)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_WAIL_OF_THE_BANSHEE)
+  Global("Magyvamp2","LOCALS",3)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+    SetGlobal("Magyvamp2","LOCALS",4)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_IMPRISONMENT)
+  Global("Magyvamp2","LOCALS",4)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_IMPRISONMENT)
+    SetGlobal("Magyvamp2","LOCALS",5)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_METEOR_SWARM)
+  Global("Magyvamp2","LOCALS",5)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    SetGlobal("Magyvamp2","LOCALS",6)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_TIME_STOP)
+  Global("Magyvamp2","LOCALS",6)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_IMPROVED_MANTLE)
+    SetGlobal("Magyvamp2","LOCALS",7)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  Global("Magyvamp2","LOCALS",7)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("Magyvamp2","LOCALS",8)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  Global("Magyvamp2","LOCALS",8)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    Spell(SecondNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    SetGlobal("Magyvamp2","LOCALS",9)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_DISINTEGRATE)
+  Global("Magyvamp2","LOCALS",9)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+    Spell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+    SetGlobal("Magyvamp2","LOCALS",10)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

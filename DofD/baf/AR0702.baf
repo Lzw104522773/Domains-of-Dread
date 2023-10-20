@@ -1,0 +1,16 @@
+IF
+  Global("wmSpawnDeidre","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("wmart2",[498.456],12)  
+    SetGlobal("wmSpawnDeidre","GLOBAL",1)
+END
+
+IF
+  Global("Demointomad1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("dementy",[762.886],9)  
+    SetGlobal("Demointomad1","GLOBAL",1)
+END
+

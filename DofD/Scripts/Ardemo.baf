@@ -1,0 +1,14 @@
+IF
+  Global("Ardemo1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Ardemo1","GLOBAL",1)
+    CreateCreature("DEMDARK",[2197.1667],4)  
+    CreateCreature("MAGVAMP",[1764.1277],4)  
+    CreateCreature("DEMSPEC",[1266.1495],4)  
+    CreateCreature("CLERVAMP",[371.1352],4)  
+    CreateCreature("WEREGR01",[417.1372],4)  
+    CreateCreature("DEMRESD",[944.1533],4)  
+    CreateCreature("ICBONE01",[1507.1039],4)  
+END
+

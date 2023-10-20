@@ -1,0 +1,161 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ReallyForceSpellDead(Myself,VAMPIRE_GAS_FORM_CHANGE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(7)
+    StateCheck(LastSeenBy(Myself),STATE_HASTED)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    StateCheck(LastSeenBy(Myself),STATE_BLESS)
+    StateCheck(LastSeenBy(Myself),STATE_CHANT)
+    StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+    StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+  Global("PrepDef1","LOCALS",0)
+THEN
+  RESPONSE #70
+    ReallyForceSpell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)
+    ForceSpell(LastSeenBy(Myself),CLERIC_TRUE_SIGHT)
+    SetGlobal("PrepDef1","LOCALS",1)
+  RESPONSE #30
+    Spell(Myself,CLERIC_CLOAK_OF_FEAR)
+    ApplySpell(Myself,CLERIC_REGENERATE)
+    SetGlobal("PrepDef1","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_IRONSKIN)
+  Global("Cleryvamp","LOCALS",0)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_IRONSKIN)
+    SetGlobal("Cleryvamp","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("Cleryvamp","LOCALS",1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_ARMOR_OF_FAITH)
+    SetGlobal("Cleryvamp","LOCALS",2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_CREEPING_DOOM)
+  Global("Cleryvamp2","LOCALS",0)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CREEPING_DOOM)
+    SetGlobal("Cleryvamp2","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_SUNRAY)
+  Global("Cleryvamp2","LOCALS",1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_SUNRAY)
+    SetGlobal("Cleryvamp2","LOCALS",3)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_BOLT_OF_GLORY)
+  Global("Cleryvamp2","LOCALS",3)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_BOLT_OF_GLORY)
+    SetGlobal("Cleryvamp2","LOCALS",4)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  Global("Cleryvamp2","LOCALS",4)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+    SetGlobal("Cleryvamp2","LOCALS",5)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_CONFUSION)
+  Global("Cleryvamp2","LOCALS",5)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_CONFUSION)
+    SetGlobal("Cleryvamp2","LOCALS",6)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_BLADE_BARRIER)
+  Global("Cleryvamp2","LOCALS",6)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_BLADE_BARRIER)
+    SetGlobal("Cleryvamp2","LOCALS",7)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_SYMBOL_FEAR)
+  Global("Cleryvamp2","LOCALS",7)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_SYMBOL_FEAR)
+    SetGlobal("Cleryvamp2","LOCALS",8)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_FINGER_OF_DEATH)
+  Global("Cleryvamp2","LOCALS",8)
+THEN
+  RESPONSE #100
+    Spell(SecondNearestEnemyOf(Myself),CLERIC_FINGER_OF_DEATH)
+    SetGlobal("Cleryvamp2","LOCALS",9)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_BOLT_OF_GLORY)
+  Global("Cleryvamp2","LOCALS",9)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_BOLT_OF_GLORY)
+    SetGlobal("Cleryvamp2","LOCALS",10)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+  HPLT(Myself,25)
+  HaveSpell(CLERIC_HEAL)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_HEAL)
+END
+

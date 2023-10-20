@@ -1,0 +1,27 @@
+IF
+  Contains("MISC42","NonVisible1")  
+  Global("DemoTravI6","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    ActionOverride("NonVisible1",DestroyItem("MISC42"))  
+    SetGlobal("DemoTravI6","GLOBAL",1)
+    CreateVisualEffectObject("SPDIMNDR",Player6)
+    CreateVisualEffectObject("SPDIMNDR",Player5)
+    CreateVisualEffectObject("SPDIMNDR",Player4)
+    CreateVisualEffectObject("SPDIMNDR",Player3)
+    CreateVisualEffectObject("SPDIMNDR",Player2)
+    CreateVisualEffectObject("SPDIMNDR",Player1)
+    Wait(2)
+    FadeToColor([30.0],0)
+    Wait(1)
+    EndCutSceneMode()
+    ActionOverride(Player1,LeaveAreaLUA("ardem","",[2267.1711],4))
+    ActionOverride(Player2,LeaveAreaLUA("ardem","",[2267.1711],4))
+    ActionOverride(Player3,LeaveAreaLUA("ardem","",[2267.1711],4))
+    ActionOverride(Player4,LeaveAreaLUA("ardem","",[2267.1711],4))
+    ActionOverride(Player5,LeaveAreaLUA("ardem","",[2267.1711],4))
+    ActionOverride(Player6,LeaveAreaLUA("ardem","",[2267.1711],4))
+    Continue()
+END

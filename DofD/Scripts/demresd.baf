@@ -1,0 +1,25 @@
+IF
+  See(NearestEnemyOf(Myself))
+  Global("Keeny","LOCALS",0)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(NearestEnemyOf(Myself),BANSHEE_WAIL)
+    SetGlobal("Keeny","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_INVISIBILITY)
+    Wait(2)
+    AttackReevaluate(SecondNearestEnemyOf(Myself),6)
+END
+

@@ -1,0 +1,291 @@
+@0 = ~Domini del Terrore~ 
+@1 = ~Installando le Aree~ 
+@2 = ~Installando i Bam~ 
+@3 = ~Installando gli Oggetti~ 
+@4 = ~Pergamena~ 
+@5 = ~Apocalisse~ 
+@6 = ~Apocalisse (Invocazione)  
+Livello: 9 
+Raggio d'azione: Campo visivo dell'incantatore
+Durata: Istantaneo
+Tempo di lancio: 3 
+Area d'effetto:  10 metri cubi 
+Tiro-salvezza: Negato
+
+Al massimo livello degli Incantesimi del Fuoco, Apocalisse è all'altezza del suo nome. Questo incantesimo è fatto per essere lanciato davanti a grandi branchi di mostri rabbiosi, un evento frequente che può capitare una volta che osi avventurarti in un sotterraneo. La maggior parte dei mostri nelle vicinanze semplicemente salta in aria, mentre tutti gli altri vengono notevolmente indeboliti.~ 
+@7 = ~Mazza~ 
+@8 = ~Portatore di Notte~ 
+@9 = ~La mazza è un diretto discendente della clava, non essendo altro che una sbarra di legno sulla cui estremità è montata una punta di pietra o ferro. La forma della punta varia: alcune sono appuntite, altre stondate e altre ancora provviste di punte piramidale.
+
+STATISTICHE: 
+
+Danno: 1D6 +1 
+Tipo di danno: Schiacciamento 
+Peso: 8 
+Fattore Velocità: 7 
+Tipo di Competenza: Mazza 
+Tipo: A 1 mano 
+Richiede: Forza 10 
+
+Non utilizzabile da:
+ Druido
+ Mago
+ Ladro~ 
+@10 = ~Portatore di Notte: Mazza +3 
+Di proprietà di un Gran Signore dei Draghi, Verminaard, Portatore di Notte è la mazza di un servitore e un potente strumento del male. Creata dai chierici della Regina delle Tenebre, Portatore di Notte fa sì che ogni vittima colpita dalla mazza diventi cieca. Portatore di Notte può essere usato solo da coloro che sono innatamente malvagi. Le persone buone che usano la mazza devono superare un tiro salvezza contro incantesimi o essere convertite al male. I Paladini che raccolgono la mazza vengono uccisi, e i ranger che la toccano devono superare un tiro salvezza contro morte o essere uccisi. 
+
+STATISTICHE: 
+
+Speciale: 50% di possibilità di uccidere un paladino ad ogni colpo a segno 
+ 50% di possibilità di risucchiare un livello (salva contro incantesimi) 
+ Il bersaglio deve salvare contro incantesimi a -2 e essere accecato permanentemente
+THAC0: +3 
+Danno: 1D6 +4 
+Tipo di danno: Schiacciamento 
+Peso: 4 
+Fattore Velocità: 4 
+Tipo di Competenza: Mazza 
+Tipo: A 1 mano 
+Richiede: Forza 7
+
+Non utilizzabile da:
+ Druido
+ Mago
+ Ladro
+ Elfo 
+ Personaggi di allineamento buono~ 
+@11 = ~Arco Corto~ 
+@12 = ~Arco di Cupido~ 
+@13 = ~Gli archi corti furono i primi ad apparire, anche se non con questo nome. Più che altro questo è un termine generico che si riferisce a ogni arma di questo tipo che non è un arco lungo. Le aste degli archi corti hanno lunghezza media di 1,5 m. Con il trascorrere degli anni si è cercato di aumentare la gittata degli archi costruendoli con aste più lunghe, oppure con maggiore flessibilità senza modificarne la lunghezza giungendo, nel primo caso, alla creazione dell'arco lungo.  
+
+STATISTICHE: 
+
+Peso: 2 
+Fattore Velocità: 6 
+Tipo di Competenza: Arco corto
+Tipo: A 2 mani 
+Richiede: Forza 3
+ 
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago~ 
+@14 = ~Arco di Cupido
+Quest'arco incantato era di proprietà del dio Cupido. Egli usava quest'arco per indurre la gente ad innamorarsi. Quest'arco sembra anche aumentare l'attrattiva di colui che lo impugna.
+
+STATISTICHE: 
+
+Speciale: Il bersaglio deve superare un Salva contro Incantesimi o essere Charmato 
+Carisma: +5 
+THAC0: +5 bonus 
+Peso: 2 
+Fattore Velocità: 6 
+Tipo di Competenza: Arco corto
+Tipo: A 2 mani
+
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago~ 
+@15 = ~Chiave del portale~ 
+@16 = ~Una chiave decorata, ti è stato detto di inserirla nella lampada.~ 
+@17 = ~Attacco~ 
+@18 = ~Divoratore di cervelli~ 
+@19 = ~Anello~ 
+@20 = ~Un anello è una piccola fascia di metallo prezioso utilizzata come gioiello. Alcuni anelli rari sono stati incantati e hanno acquisito poteri magici. Questi anelli sono molto ricercati, soprattutto dagli avventurieri.~ 
+@21 = ~Anello di Libertà di Movimento: “il Dono di Edventar”
+Questo anello è stato dato al predone costiero e cacciatore conosciuto come Adventar da un gruppo di elfi acquatici suoi vecchi amici. Il suo aiuto nel respingere la "Regina dei Pirati" Yenandra di Dambrath è stato fondamentale per la loro sopravvivenza, anche se Yenandra continua ad essere temuta su ogni altra costa. 
+
+STATISTICHE:
+
+Speciale: il portatore è immune a qualsiasi cosa, di natura magica o meno, che influenzi in qualsiasi modo la mobilità, compresi gli incantesimi di velocità e rallentamento.~ 
+@22 = ~Artiglio del Drago~ 
+@23 = ~Mazza del Terrore~ 
+@24 = ~Mazza del Terrore +2 
+Questo mazza pesante +2 ha una potente capacità magica che le permette a portatore stesso di invilupparsi in un'aura terrificante. I suoi vestiti e il suo aspetto vengono trasformati in una illusione di orrore più oscuro, in modo tale che tutti coloro che entro 6 metri lo vedono devono superare un tiri salvezza sulla Volontà (DC 16) o rimanere paralizzati dal terrore (come colpiti da Bloccapersone). Quelli che riescono a superare il tiro salvezza restano scossi. Ogni volta che la mazza viene utilizzata per provocare terrore, c'è il 20% di possibilità che colui che la impugna perda permanentemente 1 punto di Carisma.
+
+STATISTICHE:
+
+THAC0: +2 
+Danno: 1D6 +3 
+Tipo di danno: Schiacciamento
+Peso: 15 
+Fattore Velocità: 7 
+Tipo di Competenza: Mazza 
+Tipo: A 1 mano 
+Richiede: Forza 15
+ 
+Non utilizzabile da:
+ Druido
+ Mago
+ Ladro~ 
+@25 = ~Modifica carisma~ 
+@26 = ~Elmo~ 
+@27 = ~Maschera del Teschio~ 
+@28 = ~Questa classe di elmi decorativi, fatti di cuoio rinforzato o di metallo, coprono il volto e la testa e sono dotati di utili fessure per gli occhi, nonché di fori per respirare.
+
+STATISTICHE:
+
+Bonus di Classe Armatura: Nessuno 
+Speciale: Protegge contro i Colpi Critici
+Peso: 2 
+
+Non utilizzabile da:
+ Mago
+ Bardo
+ Ladro~ 
+@29 = ~Maschera del Teschio
+Questa maschera d'avorio è stata modellata a immagine di un teschio umano. Una volta al giorno la maschera può essere liberata per volare via dal viso di colui che la indossa. Essa viaggia fino a 16 metri di distanza da chi la indossa e attacca il bersaglio assegnatole. La ghignante maschera a teschio compie un attacco al tocco contro il bersaglio. Se riesce, l'obiettivo deve effettuare un tiro salvezza sulla Tempra (CD 20) o essere colpito a morte, come se fosse colpito dall'incantesimo dito della morte. Se l'obiettivo ha successo nel suo tiro salvezza, subisce comunque 3d6+13 punti di danno. Dopo aver attaccato (con successo o meno), la maschera vola verso colui che la indossa.
+
+STATISTICHE:
+
+Abilità Speciali (una volta al giorno): Evoca teschio  
+Bonus di Classe Armatura: 1 
+Peso: 2 
+
+Non utilizzabile da:
+ Mago
+ Bardo
+ Ladro~ 
+@30 = ~Spada Bastarda~ 
+@31 = ~Spada di Cristallo +4~ 
+@32 = ~Conosciuta anche come spada a una mano e mezza, la spada bastarda deve il suo nome al fatto che è una via di mezzo tra la spada a due mani e quella lunga. La spada bastarda ha una lama a doppio taglio e una lunga impugnatura, sufficientemente grande da accogliere entrambe le mani. La lunghezza complessiva della spada bastarda varia all'incirca da 1,20 a 1,40 m.
+
+STATISTICHE:
+
+Danno: 2D4  
+Tipo di Danno: Taglio
+Peso: 10 
+Fattore Velocità: 8 
+Tipo di Competenza: Spada Bastarda
+Tipo: A 1 mano
+Richiede: Forza 11
+
+Non utilizzabile da:
+ Druido 
+ Chierico
+ Mago
+ Ladro~ 
+@33 = ~Una spada bastarda ricavata da un unico grande pezzo di cristallo di quarzo. La magia la rende dello stesso peso e durezza di una normale spada bastarda e fornisce le sue capacità speciali (che non sono evidenti o sempre note). Quando la impugna in questo modo l'utilizzatore può guardare attraverso la lama, la quale rivela la vera natura delle cose. 
+
+STATISTICHE:
+
+Speciale: Identifica gli oggetti, 5 volte al giorno lancia Vera Vista
+THAC0: +4 
+Danno: 1D8 +4 
+Tipo di Danno: Taglio
+Peso: 4 
+Fattore Velocità: 2 
+Tipo di Competenza: Spada Bastarda
+Tipo: A 1 mano
+Richiede: Forza 11
+
+Non utilizzabile da:
+ Druido 
+ Chierico
+ Mago
+ Ladro~ 
+@34 = ~Spada Corta~ 
+@35 = ~Ruba Anima (Spada Corta Vorpal +3)~ 
+@36 = ~La spada corta fu la prima spada prodotta. Per dare un'idea approssimativa della forma, la spada corta può essere assimilata a una sorta di pugnale con lama così lunga da non poter più essere considerata tale. Il termine spada corta non esiste nella classificazione delle spade. Tuttavia, definisce una lama a doppio taglio di circa 60 cm. Solitamente l'estremità è appuntita, l'ideale per trafiggere.
+
+STATISTICHE:
+
+Danno: 1D6 
+Tipo di Danno: Perforazione
+Peso: 3 
+Fattore Velocità: 3 
+Tipo di Competenza: Spada Corta
+Tipo: A 1 mano
+Richiede: Forza 5
+
+Non utilizzabile da:
+ Druido 
+ Chierico
+ Mago~ 
+@37 = ~Ruba Anima
+Queste lame sono utilizzate solo dai ladri più grandi, e sono estremamente rare. Le Ruba Anima sono state create sul Piano delle Ombre da abili mastri ferrai. Sono piuttosto letali e occasionalmente uccideranno istantaneamente il malcapitato con un solo leggero tocco di spada. Poiché molte persone muoiono senza neanche sapere che cosa le ha colpite, se gli aggressori sono ladri esperti possono colpire senza essere visti. La lama vibra nella mano di colui che la impugna, assetata di vite da rubare.  
+
+STATISTICHE:
+
+Speciale: Ruba 2 pf e li dà a colui che la impugna 
+15% di possibilità di uccidere la vittima
+Bonus di Classe Armatura: +1 
+THAC0: +3 bonus 
+Danno: 1D6 +3 
+Tipo di Danno: Perforazione
+Peso: 3  
+Fattore Velocità: 2 
+Tipo di Competenza: Spada Corta
+Tipo: A 1 mano
+Richiede: Forza 5
+
+Utilizzabile da:
+ Ladro~ 
+@38 = ~Supplica Bruciante di Sigfrido~ 
+@39 = ~Supplica Bruciante di Sigfrido (Invocazione)  
+Livello: 4 
+Raggio d'azione: Campo visivo dell'incantatore
+Durata: Istantaneo  
+Tempo di lancio: 3  
+Area d'effetto: Un bersaglio
+Tiro Salvezza: Nessuno 
+
+Questo incantesimo alza la temperatura intorno alla creatura indicata a livelli inimmaginabili, provocando l'infiammarsi dell'aria. Ciò causa 2d6+1 punti di danno per 4 livelli dell'incantatore (cioè 6d6+3 al livello 8) fino ad un massimo di 10d6+5 al livello 20.~ 
+@40 = ~Spada Lunga~ 
+@41 = ~Destino Verde~ 
+@42 = ~Queste spade sono spesso chiamate spade a doppia lama, spade da guerra o spade militari. In molti casi la spada lunga ha una lama affilata solo da un lato. Non esiste una versione unica della spada lunga: l'aspetto e la lunghezza variano da cultura a cultura e addirittura possono essere diverse anche nell'ambito di una stessa cultura in epoche diverse. Una tra le caratteristiche più comuni delle spade lunghe è, appunto, la loro lunghezza che va dagli 87 ai 117 cm. In quest'ultimo caso, la lama occupa un metro della lunghezza totale. La maggior parte delle spade lunghe ha lama a doppio taglio e punta affilata. Nonostante la punta, la spada lunga è stata pensata per tagliare, non per infilzare. 
+
+STATISTICHE:
+
+Danno: 1D8 
+Tipo di Danno: Taglio
+Peso: 4 
+Fattore Velocità: 5 
+Tipo di Competenza: Spada Lunga
+Tipo: A 1 mano
+Richiede: Forza 6
+
+Non utilizzabile da:
+ Druido 
+ Chierico
+ Mago~ 
+@43 = ~Questa potente spada è stata utilizzata a lungo dalla guerriera Jen e la rese quasi imbattibile. Jen è stata sconfitta solo dal maestro guerriero Li. 
+
+STATISTICHE:
+
+Abilità di combattimento:
+ Dissolve Magie ogni volta che colpisce un avversario
+Abilità durante l'uso:  
+ Velocità 
+Danno: 1D12 +5 
+THACO: +5 bonus 
+Tipo di Danno: Taglio 
+Peso: 7 
+Fattore Velocità: 2 
+Tipo di Competenza: Spada Lunga
+Tipo: A 1 mano
+Richiede: Forza 11
+
+Non utilizzabile da:
+ Druido 
+ Chierico
+ Mago
+ Allineamenti Malvagi o Neutrali~ 
+@44 = ~Dissolvi effetti~ 
+@45 = ~Installando gli Incantesimi~ 
+@46 = ~Sguardo Corruttivo~ 
+@47 = ~Soffio del Demi-DracoLich~ 
+@48 = ~Installando le Creature~ 
+@49 = ~Prete Vampiro~ 
+@50 = ~Oscuro~ 
+@51 = ~Demi-DracoLich~ 
+@52 = ~Persona Completamente Folle~ 
+@53 = ~Portale~ 
+@54 = ~Residente~ 
+@55 = ~Spettro~ 
+@56 = ~Tiranno della Morte~ 
+@57 = ~Teschio~ 
+@58 = ~Mago Vampiro~ 
+@59 = ~Installando i Dialoghi~ 
+@60 = ~Installando gli Script~ 

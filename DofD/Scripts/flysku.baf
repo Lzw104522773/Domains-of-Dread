@@ -1,0 +1,31 @@
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetGlobal("skullde","GLOBAL",0)
+END
+
+IF
+  Global("skullde","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),2)
+THEN
+  RESPONSE #100
+    MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),2)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    SetGlobal("skullde","GLOBAL",1)
+END
+

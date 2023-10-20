@@ -1,0 +1,283 @@
+@0  = ~DofD~ 
+@1  = ~Installiere Gebiete~
+@2  = ~Installiere Bams~ 
+@3  = ~Installiere Gegenstände~
+@4  = ~Schriftrolle~ 
+@5  = ~Apocalypse~
+@6  = ~Apocalypse (Aufruf) 
+Level: 9
+Reichweite: Sichtbereich des Zaubernden
+Wirkungsdauer: sofort
+Zeitaufwand: 3 
+Wirkunsbereich: 40' Quadrat
+Rettungswurf: Nein~
+@7  = ~Keule~ 
+@8  = ~Nachtbringer~
+@9  = ~Der Streitkolben ist eine direkte Ableitung der einfachen Keule und besteht lediglich aus einem Holzschaft, auf den lediglich ein Stein oder Eisenkopf aufgesetzt ist. Der Kopf kann entweder mit Spitzen versehen, geflanscht oder aber auch pyramidenförmig ausgearbeitet sein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden 1W6 + 1
+Schadentyp:  Wuchtwaffe
+Gewicht: 8
+Initiativefaktor: 7
+Waffenfertigkeit: Streitkolben
+Typ: einhändig
+Mindeststärke: 10
+Kann nicht verwendet werden von:
+ Druiden
+ Magiern
+ Dieben~ 
+@10 = ~Nachtbringer: Streitkolben +3
+
+Im Besitz von Drachen Hochlord Verminaard, ist Nachtbringer ein Streitkolben für Fußsoldaten und ein mächtiges Werkzeug des Bösen. Hergestellt von den Klerikern der Königin der Dunkelheit, veranlaßt Nachtbringer jedes Opfer, das von dem Kolben getroffen wird, blind zu werden.
+Nachtbringer kann nur von jenen benutzt werden, die von Natur aus schlecht sind.   
+Gute Menschen, die den Streitkolben benutzen, müssen einen Rettungswurf gegen Sprüche werfen, ansonsten wird ihre Gesinnung in böse konvertiert. Paladine, die ihn aufheben werden getötet, und Waldläufer die ihn berühren müssen eine Rettungswurf gegen Tod bestehen oder sie werden ebenfalls getötet.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: 50% Chance einen Paladin mit einem erfolgreichen Hieb zu erschlagen. Ziel muß einen Rettungswurf gegen Sprüche -2 werfen oder sie erblinden dauerhaft.
+ETW0: +3
+Schaden 1W6 + 4
+Schadentyp:  Wuchtwaffe
+Gewicht: 4
+Initiativefaktor: 4
+Waffenfertigkeit: Streitkolben
+Typ: einhändig
+Mindeststärke: 7
+Kann nicht verwendet werden von:
+ Druiden
+ Magiern
+ Dieben
+ Elfen
+Charakteren mit guter Gesinnung~
+@11 = ~Kurzbogen~
+@12 = ~Amors Bogen~ 
+@13 = ~Ein Kurzbogen ist die älteste Form eines Bogens, jedoch wurde er nicht als solcher bezeichnet. Der Begriff "Kurzbogen" ist eher eine Standardbezeichnung für alle Bögen, die nicht als Langbogen gelten. Der Bogen eines Kurzbogens ist durchschnittlich etwa 1,50 m lang. Im Laufe der Zeit versuchte man, die Reichweite von Bögen zu vergrößern. Dabei verlängerte man entweder den Bogen oder erhöhte seine Flexibilität, ohne gleichzeitig die Länge zu verändern. Im ersten Fall entwickelte sich daraus der sogenannte Langbogen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Gewicht: 2
+Initiativefaktor: 6
+Waffenfertigkeit: Kurzbogen
+Waffentyp:  zweihändig
+Mindeststärke: 3
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~
+@14 = ~Amors Bogen
+
+Dieser verzauberte Bogen war Eigentum des Gottes Amor. Er benutzte den Bogen, damit die Menschen sich verliebten. Dieser Bogen scheint auch seinen Träger attraktiver wirken zu lassen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Ziel muß einen Rettungswurf gegen Sprüche werfen oder er ist verzaubert.
+Charisma +5
+ETW0: +5 Bonus
+Gewicht: 2
+Initiativefaktor: 6
+Waffenfertigkeit: Kurzbogen
+Waffentyp:  zweihändig
+Mindeststärke: 3
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~ 
+@15 = ~Portalschlüssel~
+@16 = ~Ein komplizierter Schlüssel. Es wurde Dir gesagt, ihn in die Lampe zu stecken.~
+@17 = ~Attacke~
+@18 = ~Verschlinges Gehirn~ 
+@19 = ~Ring~
+@20 = ~Ein Ring ist ein kleines Band aus wertvollem Metall, das als Schmuck am Finger getragen wird. Einige Ringe sind verzaubert und verleihen magische Fähigkeiten. Sie sind heißbegehrt, insbesondere von Menschen, deren Beruf das Abenteuer ist.~ 
+@21 = ~Ring der Freiheit: "Edventars Geschenk"
+Dieser Ring wurde dem Riff Plünderer und Jäger, nur bekannt als Edventar, von einer Gruppe Wasserelfen seinen langjährigen Freunden gegeben. Seine Hilfe bei der Routenplanung der Piratenkönigin Yenandra von Dambrath war entscheidend für ihr Überleben, da Yenandra weithin auf allen Meeren gefürchtet war.
+
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Der Träger ist immun gegen alles, magisch sowie nichtmagisch, was seine Bewegung in irgeindeiner weise beeinträchtigt. Dies beinhaltet auch Hast und Langsam Sprüche.~ 
+@22 = ~Drachenklaue~
+@23 = ~Keule des Terrors~ 
+@24 = ~Keule des Terrors +2
+
+Dieser +2 schwere Streitkolben hat eine starke spruchgleiche Fähigkeit: Es hüllt den Träger in eine Furcht einflößende Aura. Seine Kleidung und Erscheinung verändern sich in eine Illusion von dunkelstem Horror, sodaß alles in einer Reichweite von 6m einen Rettungswurf gegen Willen werfen muß oder unbeweglich vom Schrecken ist. Welche die den Wurf bestanden haben sind erschüttert. Jedesmal wenn der Streitkolben Terror verbreitet, besteht die 20% Chance, daß der Träger dauerhaft einen Charismapunkt verliert.
+
+STATISTICS:
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: +2
+Schaden 1W6 + 3
+Schadentyp:  Wuchtwaffe
+Gewicht: 15
+Initiativefaktor: 7
+Waffenfertigkeit: Streitkolben
+Typ: einhändig
+Mindeststärke: 15
+Kann nicht verwendet werden von:
+ Druiden
+ Magiern
+ Dieben~
+@25 = ~Charisma Modifikation~
+@26 = ~Helm~
+@27 = ~Maske des Schädels~
+@28 = ~Diese Art eines offenen Helms besteht aus verstärktem Leder oder Metall und bedeckt den Großteil des Kopfes mit Ausnahme des Gesichts und des Nackens. Die meisten dieser Helme sind mit einem Nasenschutz versehen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Rüstungklasse: keine
+Schützt vor kritischen Treffern
+Gewicht: 2
+Kann nicht verwendet werden von:
+ Magiern
+ Barden
+ Dieben~
+@29 = ~Maske des Schädels
+
+Diese Elfenbeinmaske wurde dem menschlichen Schädel nachempfunden. Einmal am Tag kann die Maske sich vom Gesicht des Trägers loslösen. Sie kann bis zu 15 m vom Träger wegschweben und Ziele angreifen. Die grinsende Schädelmaske kann eine Berührungsattacke gegen das Ziel durchführen. Wenn sie erfolgreich ist, muß das Ziel ein Tapferkeits Rettungswurf (W20) bestehen oder es wird wie mit einem Finger des Todes Spruch getroffen. Wenn das Ziel den Rettungswurf besteht, bekommt es trotzalldem einen Schaden von 3W6+13. Nach dem Angriff (egal ob erfolgreich oder nicht) fliegt die Maske zurück zu ihrem Benutzer. 
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Kann einmal täglich einen Schädel beschwören
+Rüstungklasse: 1
+Gewicht: 2
+Kann nicht verwendet werden von:
+Magiern
+Barden
+Dieben~
+@30 = ~Bastardschwert~
+@31 = ~Kristallschwert +4~
+@32 = ~Das Bastardschwert ist von seiner Art her zwischen dem Zweihänder und dem Langschwert angesiedelt, weshalb es auch als Anderthalbhänder bezeichnet wird. Es besitzt eine zweischneidige Klinge und einen langen Griff, wodurch es auch beidhändig geschwungen werden kann. Die durchschnittliche Länge des Bastardschwertes liegt zwischen 1,40 und 1,60 m.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 2W4
+Schadentyp:  Klingenwaffe
+Gewicht: 10
+Initiativefaktor: 8
+Waffenfertigkeit: Bastardschwert
+Waffentyp: einhändig
+Mindeststärke: 11
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern
+ Dieben~
+@33 = ~Ein Bastardschwert aus einem einzigen Stück Quartzkristall geschmiedet. Magie verhilft ihm zu normalen Gewicht und Härte eines normalen Bastardschwertes Seine besonderen eigenschaften, sind nicht klar oder bekannt. Wenn es getragen wird, kann der Benutzer durch die Klinge sehen, es zeigt dann die wahre Natur von Dingen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Identifiziert Gegenstände, fünfmal am Tag kann klare Sicht gezaubert werden
+ETW0: +4
+Schaden: 1W8+4
+Schadentyp:  Klingenwaffe
+Gewicht: 4
+Initiativefaktor: 2
+Waffenfertigkeit: Bastardschwert
+Waffentyp: einhändig
+Mindeststärke: 11
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern
+ Dieben~
+@34 = ~Kurzschwert~
+@35 = ~Seelenräuber (Vorpal Kurzschwert +3)~
+@36 = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff "Kurzschwert" ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W6
+Schadentyp:  Stichwaffe
+Gewicht: 3
+Initiativefaktor: 3
+Waffenfertigkeit: Kurzschwert
+Waffentyp: einhändig
+Mindeststärke: 5
+Kann nicht verwendet werden von:
+ Druiden~
+@37 = ~Seelenräuber
+Diese Klingen werden nur von den begabtesten Dieben benutzt und sind äußerst selten. Seelenräuber werden auf der Ebene der Schatten von Meisterschmieden hergestellt. Sie sind lautlos tödlich und vernichten ab und zu ihre unglücklichen Opfer mit einer eizigen Berührung. Deshalb sterben viele Wesen ohne überhaupt zu ahnen, was sie getroffen hat, denn ihre Angreifer sind ausgebildete Diebe, die aus dem Hinterhalt angreifen. Die Klinge vibriert in der Hand des Trägers, durstig nach zu stehlenden Leben.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Stiehlt 2 Trefferpunkte und gibt sie dem Träger. 15% Chance das Opfer direkt zu töten
+
+Rüstungsklassenbonus: +1
+ETW0: +3 Bonus
+Schaden: 1W6 + 3
+Schadenstyp: Wuchtwaffe
+Gewicht: 3
+Initiativfaktor: 2
+Fertigkeit: Kurzschwert
+Typ: einhändig
+Mindeststärke: 5
+
+Kann verwendet werden von:
+ Dieben~
+@38 = ~Siegfrieds Glühendes Gebet~
+@39 = ~Siegfrieds Glühendes Gebet(Aufruf) 
+Level: 4
+Reichweite: Sichtbereich des Zaubernden
+Wirkungsdauer: sofort
+Zeitaufwand: 3 
+Wirkunsbereich: Ein Ziel 
+Rettungswurf: Nein~
+@40 = ~Langschwert~
+@41 = ~grünes Schicksal~
+@42 = ~Diese Schwerter werden auch als Schwerter mit zwei Schneiden, Kriegsschwerter oder Militärschwerter bekannt. In vielen Fällen hat das Langschwert nur eine einschneidige Klinge. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweichneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen sondern zum Schwingen vorgesehen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Bannt Magie sobald das Schwert einen Gegner trifft. Wirkt Hast auf den Träger
+
+Schaden: 1W8
+Schadenstyp: Klingenwaffe
+Gewicht: 4
+Initiativfaktor: 5
+Fertigkeit: Langschwert
+Typ: einhändig
+Mindeststärke: 6
+
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~
+@43 = ~Dieses mächtige Schwert wurde von der Kriegerin Jen getragen und machte sie naheu unschlagbar. Jen wurde alleine vom Meisterkrieger Li übertroffen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Bannt Magie, sobald das Schwert einen Gegner trifft. Wirkt Hast auf den Träger
+
+Schaden: 1W12 + 5
+ETW0: +5
+Schadenstyp: Klingenwaffe
+Gewicht: 7
+Initiativfaktor: 2
+Fertigkeit: Langschwert
+Typ: einhändig
+Mindeststärke: 11
+
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern
+Charakteren mit böser oder neutraler Gesinnung~
+@44 = ~Effekte bannen~
+@45 = ~Installiere Sprüche~
+@46 = ~Verführerischer Blick~
+@47 = ~Demi DracoLich Atem~
+@48 = ~Installiere Kreaturen~
+@49 = ~Vampier Priester~
+@50 = ~Ein Dunkler~
+@51 = ~Demi Draco Lich~
+@52 = ~völlig verrückte Person~
+@53 = ~Portal~
+@54 = ~Bewohner~
+@55 = ~Gespenst~
+@56 = ~Todestyrann~
+@57 = ~Schädel~
+@58 = ~Vampier Magier~
+@59 = ~Installiere Dialoge~
+@60 = ~Installiere Skripte~

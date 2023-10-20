@@ -1,0 +1,25 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    MultiPlayerSync()
+    StartCutSceneMode()
+    Wait(1)
+    CutSceneId("DEMDARK")   
+    Wait(1)
+    ForceSpell("NOBLEORDER",CUTSCENE_POWERWORD_KILL)
+    ActionOverride("MAGE10D",ForceSpell("DEMDARK",WIZARD_MAGIC_MISSILE))
+    ActionOverride("SLILMAT",ForceSpell("DEMDARK",CLERIC_BOLT_OF_GLORY))
+    ActionOverride("SHTHOFF1",ForceSpell(Myself,CLERIC_CHANT))
+    ForceSpell("SHTHOFF1",WIZARD_DISINTEGRATE_IGNORE_RESISTANCE)
+    ActionOverride("MAGE10D",ForceSpell("DEMDARK",WIZARD_FLAME_ARROW))
+    ActionOverride("SLILMAT",ForceSpell("DEMDARK",CLERIC_FLAME_STRIKE))
+    ForceSpell("SLILMAT",CUTSCENE_FLESH_TO_STONE)
+    ForceSpell("SLILMAT",WIZARD_FLAME_ARROW)
+    ActionOverride("MAGE10D",ForceSpell("DEMDARK",CUTSCENE_RUBY_RAY_OF_REVERSAL))
+    ForceSpell("SLILMAT",WIZARD_MELF_ACID_ARROW)
+    ForceSpell("SLILMAT",WIZARD_FINGER_OF_DEATH_IGNORE_RESISTANCE)
+    ActionOverride("DEMDARK",SetDialogue("Demdark1"))
+    ActionOverride("DEMDARK",StartDialogNoSet(Player1))
+END
+
