@@ -1,8 +1,10 @@
 IF
   See([PC])
+  Global("demdark1","GLOBAL",0)
 THEN
   RESPONSE #100
     Wait(1)
+    SetGlobal("demdark1","GLOBAL",1)
     StartDialogNoSet(Player1)
 END
 

@@ -1,9 +1,10 @@
 IF
-  True()
+  Global("demdark","GLOBAL",0)
 THEN
   RESPONSE #100
     FadeFromColor([30.0],0)
     Wait(2)
+    SetGlobal("demdark","GLOBAL",1)
     StartDialogNoSet(Player1)
 END
 

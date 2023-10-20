@@ -1,4 +1,13 @@
 IF
+	Global("EnterArdem1","GLOBAL",0)
+THEN
+  RESPONSE #100
+		FadeFromColor([30.0],0)
+		SetGlobal("EnterArdem1","GLOBAL",1)
+		MoveViewPoint([1039.638],INSTANT)
+END
+
+IF
   Global("Ardemo2","GLOBAL",1)
 THEN
   RESPONSE #100

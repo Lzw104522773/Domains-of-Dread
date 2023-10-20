@@ -22,13 +22,15 @@ IF ~~ THEN BEGIN 3 // from: 2.0
 END
 
 IF ~~ THEN BEGIN 4 // from: 3.0
-  SAY @8 
+  SAY @8
   IF ~~ THEN REPLY @9 GOTO 5
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.0
   SAY @10 
-  IF ~~ THEN EXIT
+  IF ~PartyHasItem("MISC42") !GlobalGT("Demodia","GLOBAL",1)~ 
+  THEN DO ~SetGlobal("Demodia","GLOBAL",1)~ EXIT
+  IF ~!PartyHasItem("MISC42")~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 0.1

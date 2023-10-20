@@ -3,107 +3,133 @@ AUTHOR ~XXXXXXXXXX~
 
 VERSION ~v3~
 
-README ~DofD\ReadMe-DofD.txt~
+README ~DofD/readme/ReadMe.%LANGUAGE%.txt~ ~DofD/readme/ReadMe.English.txt~
 
-AUTO_TRA ~DofD/%s~
-LANGUAGE "English" "English"
-         ~DofD/English/Setup.tra~
-LANGUAGE "Russian (translation aerie.ru)" "Russian"
-         ~DofD/Russian/Setup.tra~
-LANGUAGE "German (Uebersetzung von Ruebezahl)" "German"
-         ~DofD/German/Setup.tra~
-LANGUAGE "Italian (translation by Stoneangel" "Italian"
-         ~DofD/Italian/Setup.tra~
+ALWAYS
+
+    // Copies tra files into the autotra-folder (to leave the originals untouched)
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~DofD/Tra/English~  ~DofD/Tra/autotra/%LANGUAGE%~
+      COPY ~DofD/Tra/%LANGUAGE%~  ~DofD/Tra/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+// ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+
+ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charsets = 1
+      STR_VAR
+        tra_path = EVAL ~DofD/Tra/autotra~
+        // noconvert_array = fl#noconvert
+        reload_array = fl#reload
+	END
+END
+
+AUTO_TRA ~DofD/Tra/autotra/%s~
+LANGUAGE ~English~ ~English~
+         ~DofD/Tra/English/Setup.tra~
+LANGUAGE ~Russian (translation aerie.ru)~ ~Russian~
+         ~DofD/Tra/Russian/Setup.tra~
+LANGUAGE ~German (Uebersetzung von Ruebezahl)~ ~German~
+         ~DofD/Tra/German/Setup.tra~
+LANGUAGE ~Italian (translation by Stoneangel~ ~Italian~
+         ~DofD/Tra/Italian/Setup.tra~
+LANGUAGE ~French~ ~French~
+         ~DofD/Tra/French/Setup.tra~
 
 BEGIN  @0
 
 PRINT  @1
 
-COPY ~dofd/Areas/ardem.are~         ~override/ardem.are~          
-COPY ~dofd/Areas/ardem1.are~        ~override/ardem1.are~
+COPY ~DofD/Areas/ardem0.are~         ~override/ardem0.are~          
+COPY ~DofD/Areas/ardem1.are~        ~override/ardem1.are~
 
 PRINT  @2
 
-COPY ~dofd/Bam/HELLOLY.bam~         ~override/HELLOLY.bam~          
-COPY ~dofd/Bam/iswcr.bam~        ~override/iswcr.bam~
+COPY ~DofD/Bam/HELLOLY.bam~         ~override/HELLOLY.bam~          
+COPY ~DofD/Bam/iswcr.bam~        ~override/iswcr.bam~
 
 PRINT  @3
       
-COPY ~dofd/Items/apoc.itm~          ~override/apoc.itm~           
+COPY ~DofD/Items/apoc.itm~          ~override/apoc.itm~           
   SAY NAME1 @4 
   SAY NAME2 @5 
   SAY DESC @6 
 
-COPY ~dofd/Items/blunight.itm~      ~override/blunight.itm~       
+COPY ~DofD/Items/blunight.itm~      ~override/blunight.itm~       
   SAY NAME1 @7 
   SAY NAME2 @8 
   SAY UNIDENTIFIED_DESC @9 
   SAY DESC @10 
 
-COPY ~dofd/Items/cupbow.itm~        ~override/cupbow.itm~         
+COPY ~DofD/Items/cupbow.itm~        ~override/cupbow.itm~         
   SAY NAME1 @11 
   SAY NAME2 @12 
   SAY UNIDENTIFIED_DESC @13 
   SAY DESC @14 
 
-COPY ~dofd/Items/demokey.itm~       ~override/demokey.itm~        
+COPY ~DofD/Items/demokey.itm~       ~override/demokey.itm~        
   SAY NAME1 @15 
   SAY NAME2 @15 
   SAY UNIDENTIFIED_DESC @16 
 
-COPY ~dofd/Items/demresd.itm~       ~override/demresd.itm~        
+COPY ~DofD/Items/demresd.itm~       ~override/demresd.itm~        
   SAY NAME1 @17 
   SAY NAME2 @17 
   SAY 0x10e @18 
 
-COPY ~dofd/Items/demresd1.itm~      ~override/demresd1.itm~       
+COPY ~DofD/Items/demresd1.itm~      ~override/demresd1.itm~       
 
-COPY ~dofd/Items/demspec.itm~       ~override/demspec.itm~        
+COPY ~DofD/Items/demspec.itm~       ~override/demspec.itm~        
 
-COPY ~dofd/Items/demspec1.itm~      ~override/demspec1.itm~       
+COPY ~DofD/Items/demspec1.itm~      ~override/demspec1.itm~       
   SAY NAME1 @17 
   SAY NAME2 @17 
   SAY 0x10e @18 
 
-COPY ~dofd/Items/demtyra.itm~       ~override/demtyra.itm~        
+COPY ~DofD/Items/demtyra.itm~       ~override/demtyra.itm~        
   SAY NAME1 @19 
   SAY UNIDENTIFIED_DESC @20 
   SAY DESC @21 
 
-COPY ~dofd/Items/dracoli.itm~       ~override/dracoli.itm~        
+COPY ~DofD/Items/dracoli.itm~       ~override/dracoli.itm~        
   SAY NAME1 @22 
  
-COPY ~dofd/Items/macter.itm~        ~override/macter.itm~         
+COPY ~DofD/Items/macter.itm~        ~override/macter.itm~         
   SAY NAME1 @7 
   SAY NAME2 @23 
   SAY UNIDENTIFIED_DESC @9 
   SAY DESC @24 
   SAY 0x1d6 @25 
 
-COPY ~dofd/Items/maskull.itm~       ~override/maskull.itm~        
+COPY ~DofD/Items/maskull.itm~       ~override/maskull.itm~        
   SAY NAME1 @26 
   SAY NAME2 @27 
   SAY UNIDENTIFIED_DESC @28 
   SAY DESC @29 
 
-COPY ~dofd/Items/metcrys.itm~       ~override/metcrys.itm~        
+COPY ~DofD/Items/metcrys.itm~       ~override/metcrys.itm~        
   SAY NAME1 @30 
   SAY NAME2 @31 
   SAY UNIDENTIFIED_DESC @32 
   SAY DESC @33 
 
-COPY ~dofd/Items/soulst.itm~        ~override/soulst.itm~         
+COPY ~DofD/Items/soulst.itm~        ~override/soulst.itm~         
   SAY NAME1 @34 
   SAY NAME2 @35 
   SAY UNIDENTIFIED_DESC @36 
   SAY DESC @37 
 
-COPY ~dofd/Items/spwi4so.itm~       ~override/spwi4so.itm~        
+COPY ~DofD/Items/spwi4so.itm~       ~override/spwi4so.itm~        
   SAY NAME1 @38 
   SAY NAME2 @38 
   SAY DESC @39 
 
-COPY ~dofd/Items/sw1hgd.itm~        ~override/sw1hgd.itm~         
+COPY ~DofD/Items/sw1hgd.itm~        ~override/sw1hgd.itm~         
   SAY NAME1 @40 
   SAY NAME2 @41 
   SAY UNIDENTIFIED_DESC @42 
@@ -114,75 +140,80 @@ COPY ~dofd/Items/sw1hgd.itm~        ~override/sw1hgd.itm~
 PRINT  @45
 
 
-COPY ~dofd/Spells/apoc.spl~         ~override/apoc.spl~           
+COPY ~DofD/Spells/apoc.spl~         ~override/apoc.spl~           
   SAY NAME1 @5 
   SAY UNIDENTIFIED_DESC @6 
 
-COPY ~dofd/Spells/SPCL998.spl~      ~override/SPCL998.spl~        
+COPY ~DofD/Spells/SPCL998.spl~      ~override/SPCL998.spl~        
   SAY NAME1 @46 
 
-COPY ~dofd/Spells/SPCL999.spl~      ~override/SPCL999.spl~        
+COPY ~DofD/Spells/SPCL999.spl~      ~override/SPCL999.spl~        
   SAY NAME1 @47 
 
-COPY ~dofd/Spells/spwi4so.spl~      ~override/spwi4so.spl~        
+COPY ~DofD/Spells/spwi4so.spl~      ~override/spwi4so.spl~        
   SAY NAME1 @38 
   SAY UNIDENTIFIED_DESC @39
 
 PRINT  @48
 
 
-COPY ~dofd/Cre/Clervamp.cre~        ~override/Clervamp.cre~       
+COPY ~DofD/Cre/Clervamp.cre~        ~override/Clervamp.cre~       
   SAY NAME1 @49 
   SAY NAME2 @49 
 
-COPY ~dofd/Cre/demdark.cre~         ~override/demdark.cre~        
+COPY ~DofD/Cre/demdark.cre~         ~override/demdark.cre~        
   SAY NAME1 @50 
   SAY NAME2 @50 
 
-COPY ~dofd/Cre/demdark1.cre~        ~override/demdark1.cre~       
+COPY ~DofD/Cre/demdark1.cre~        ~override/demdark1.cre~       
   SAY NAME1 @50 
   SAY NAME2 @50 
 
-COPY ~dofd/Cre/demdrac.cre~         ~override/demdrac.cre~        
+COPY ~DofD/Cre/demdrac.cre~         ~override/demdrac.cre~        
   SAY NAME1 @51 
   SAY NAME2 @51 
 
-COPY ~dofd/Cre/dementy.cre~         ~override/dementy.cre~        
+COPY ~DofD/Cre/dementy.cre~         ~override/dementy.cre~        
   SAY NAME1 @52 
   SAY NAME2 @52 
+  WRITE_ASCII 0x248 ~Demdud~ (8) // Override script
+  WRITE_ASCII 0x250 ~MAGE4A~ (8) // Class cript
+  WRITE_ASCII 0x258 ~SHOUT~ (8) // Race script
 
-COPY ~dofd/Cre/demport.cre~         ~override/demport.cre~        
+COPY ~DofD/Cre/demport.cre~         ~override/demport.cre~        
   SAY NAME1 @53 
   SAY NAME2 @53 
 
-COPY ~dofd/Cre/demresd.cre~         ~override/demresd.cre~        
+COPY ~DofD/Cre/demresd.cre~         ~override/demresd.cre~        
   SAY NAME1 @54 
   SAY NAME2 @54 
 
-COPY ~dofd/Cre/demspec.cre~         ~override/demspec.cre~        
+COPY ~DofD/Cre/demspec.cre~         ~override/demspec.cre~        
   SAY NAME1 @55 
   SAY NAME2 @55 
 
-COPY ~dofd/Cre/demtyra.cre~         ~override/demtyra.cre~        
+COPY ~DofD/Cre/demtyra.cre~         ~override/demtyra.cre~        
   SAY NAME1 @56 
   SAY NAME2 @56 
 
-COPY ~dofd/Cre/flyskull.cre~        ~override/flyskull.cre~       
+COPY ~DofD/Cre/flyskull.cre~        ~override/flyskull.cre~       
   SAY NAME1 @57 
   SAY NAME2 @57 
 
-COPY ~dofd/Cre/Magvamp.cre~         ~override/Magvamp.cre~        
+COPY ~DofD/Cre/Magvamp.cre~         ~override/Magvamp.cre~        
   SAY NAME1 @58 
   SAY NAME2 @58        
 
 
 PRINT @59
 
-COMPILE ~dofd\Dlg~ 
+COMPILE ~DofD\Dlg~ 
+
+COMPILE ~DofD/BAF/Demdud.baf~			~override~
 
 PRINT @60
 
-EXTEND_TOP ~ar0700.bcs~                 ~dofd/BAF/Ar0700.BAF~
-EXTEND_TOP ~ar0702.bcs~                 ~dofd/BAF/Ar0702.BAF~
+EXTEND_TOP ~ar0700.bcs~                 ~DofD/BAF/Ar0700.BAF~
+EXTEND_TOP ~ar0702.bcs~                 ~DofD/BAF/Ar0702.BAF~
 
-COMPILE ~dofd\Scripts~
+COMPILE ~DofD\Scripts~

@@ -1,0 +1,281 @@
+@0 = ~DofD (Le Domaine de l'Effroi)~
+@1 = ~Installation des zones~
+@2 = ~Installation des Bams~
+@3 = ~Installation des Objets~
+@4 = ~Parchemin~
+@5 = ~Apocalypse~
+@6 = ~Apocalypse (Invocation) 
+Niveau : 9
+Portée : Portée visuelle du lanceur
+Durée : Instantanée
+Temps d'incantation : 3
+Zone d'effet :  12 mètres cube
+Jet de sauvegarde : Annule
+
+Le fleuron des sorts de feu, Apocalypse fait honneur à son nom. Ce sort est conçu pour être lancé au milieu d'une horde de monstres en colère, ce qui arrive fréquemment à l’intérieur des donjons. La plupart des monstres à proximité explosent purement et simplement, tandis que tous les autres sont considérablement affaiblis.~
+@7 = ~Masse~
+@8 = ~Le Faiseur de nuit~
+@9 = ~La Masse est un descendant direct du gourdin, étant simplement un manche en bois avec une tête en pierre ou en fer attachée à son extrémité. La conception de la tête varie ; certaines sont à pointes, d'autres avec des rebords ou des bosses pyramidales.
+
+PARAMÈTRES :
+
+Dégâts :  1D6 + 1
+Type de dégâts :  Contondant
+Poids : 8
+Facteur de vitesse : 7
+Type de compétence : Masse
+Type :  Arme à une main
+Nécessite : 10 en Force
+Non utilisable par :
+ Druide
+ Mage
+Voleur~
+@10 = ~Le Faiseur de nuit +3
+Owned by a Dragon Highlord, Verminaard, Nightbringer is a footman's Masse and a powerful tool of evil. Created by the Prêtres of the Queen of Darkness, Nightbringer causes any victim struck by the Masse to go blind.
+Nightbringer may only be used by those of inherent evil.   
+Good people who use the Masse must save vs spells or be converted to evil. Paladins who pick up the Masse are slain, and rangers who touch it must save vs death or be slain.
+
+PARAMÈTRES :
+
+Spécial : 50% chance of slaying a paladin on succesful hit.
+50% chance of level drain(save vs spells)
+Target must save vs spells at -2 or be permenatly blinded
+TAC0 : +3
+Dégâts : 1D6 + 4
+Type de dégâts : Contondant
+Poids : 4
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type : Arme à une main
+Nécessite : 7  en Force
+Non utilisable par :
+ Druide
+ Mage
+Voleur
+Elfes
+Les personnages d'alignement bon~
+@11 = ~Arc court~
+@12 = ~Cupid's Bow~
+@13 = ~Short bows were the first to be developed, although they were not called such. This is more of a default term that refers to anything which is not a long bow. Short bow staves are about 5 feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the long bow.  
+
+PARAMÈTRES :
+
+Poids : 2
+Facteur de vitesse : 6
+Type de compétence : Short Bow
+Type :  2-handed
+Nécessite : 3 en Force
+Non utilisable par :
+ Druide
+ Prêtre
+ Mage~
+@14 = ~Cupid's Bow
+
+This enchanted bow was the property of the god Cupid. He uses this bow to cause people to fall in love. This bow also seems to increase the attractiveness of the wielder. 
+
+PARAMÈTRES :
+
+Spécial :  Target must Save vs Spell or be charmed
+Charisme :  +5
+TAC0 : +5 bonus
+Poids : 2
+Facteur de vitesse : 6
+Type de compétence : Short Bow
+Type :  2-handed
+Non utilisable par :
+ Druide
+ Prêtre
+ Mage~
+@15 = ~Clé du portail~
+@16 = ~Une clé sophistiquée que vous devez la placer dans la lampe.~
+@17 = ~Attaque~
+@18 = ~Dévore le cerveau~
+@19 = ~Anneau~
+@20 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
+@21 = ~Ring of Free Action:  'Edventar's Gift'
+This ring was given to the reef scavenger and hunter known only as Edventar, by a group of aquatic elves long his friends.  His help in routing the "Pirate Queen" Yenandra of Dambrath was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.
+
+PARAMÈTRES :
+
+Spécial :  The wearer is immune to everything, magical and otherwise, that affects mobility in any way. This includes haste and slow spells.~
+@22 = ~Dragon Claw~
+@23 = ~Masse of Terror~
+@24 = ~Masse of Terror +2
+This +2 heavy Masse has a potent spell-like ability allowing the wielder to envelop himself in a terrifying aura. His clothes and appearance are transformed into an illusion of darkest horror, such that all within 20 feet who view him must roll successful Will saving throws (DC 16) or be struck motionless with terror (treat as hold person). Those who succeed on their saves are shaken. Each time the Masse is used to cause terror, there is a 20% chance the wielder permanently loses 1 point from his Charisma score.
+
+PARAMÈTRES :
+
+TAC0 :  +2
+Dégâts :  1D6 + 3
+Type de dégâts :  Contondant
+Poids : 15
+Facteur de vitesse : 7
+Type de compétence : Masse
+Type :  Arme à une main
+Nécessite : 15 en Force
+Non utilisable par :
+ Druidee
+ Mage
+Voleur~
+@25 = ~Modification du charisme~
+@26 = ~Casque~
+@27 = ~Masque du crâne~
+@28 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.  
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure :  Aucun
+Spécial :  Protège contre les coups critiques
+Poids : 2
+Non utilisable par :
+Mage
+Barde
+Thief~
+@29 = ~Mask of the Skull
+
+This ivory mask has been fashioned into the likeness of a human skull. Once per day the mask can be loosed to fly from the wearer’s face. It travels up to 50 feet away from the wearer and attacks a target assigned to it. The grinning skull mask makes a touch attack against the target. If it succeeds, the target must make a Fortitude saving throw (DC 20) or be struck dead, as if affected by a finger of death spell. If the target succeeds at his saving throw, he nevertheless takes 3d6+13 points of Dégâts . After attacking (whether successful or not), the mask flies back to its user.
+
+PARAMÈTRES :
+
+Capacité spéciale (une fois par jour) : Summon skull 
+Bonus à la classe d'armure : 1
+Poids :  2
+Non utilisable par :
+ Mage
+ Barde
+Voleur~
+@30 = ~Épée bâtarde~
+@31 = ~Crystal Sword +4~
+@32 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.   
+
+PARAMÈTRES :
+
+Dégâts :  2D4 
+Type de dégâts :  tranchant
+Poids : 10
+Facteur de vitesse : 8
+Type de compétence : Épée bâtarde
+Type :  Arme à une main
+Nécessite : 11 en Force
+Non utilisable par :
+ Druide
+ Prêtre
+ Mage
+Voleur~
+@33 = ~A bastard sword made out of a large single piece of quartz crystal. Magic makes it the same weight and hardness of a regular bastard sword and provides its special ability which is not obvious or always known). When held so the user can see through the blade, it reveals the true nature of things.
+
+PARAMÈTRES :
+
+Spécial :  Identify items, five times a day cast True Sight
+TAC0 :  +4
+Dégâts :  1D8+4
+Type de dégâts :  tranchant
+Poids : 4
+Facteur de vitesse : 2
+Type de compétence : Épée bâtarde
+Type :  Arme à une main
+Nécessite : 11 en Force
+Non utilisable par :
+ Druide
+ Prêtre
+ Mage
+Thief~
+@34 = ~Épée courte ~
+@35 = ~Soul Stealer (Vorpal Short Sword +3)~
+@36 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.  
+
+PARAMÈTRES :
+
+Dégâts : 1D6
+Type de dégâts : perforant
+Poids : 3
+Facteur de vitesse : 3
+Type de compétence : Short Sword
+Type :  Arme à une main
+Nécessite : 5 en Force
+Non utilisable par :
+ Druide
+ Prêtre 
+ Mage ~
+@37 = ~Soul Stealer
+These blades are only used by the greatest of theives, and are extremly rare. Soul Stealers are created on the Plane of Shadows by skilled mastersmiths. They are quite deadly and occasionally will instantly kill the unlucky victim with only a light touch of the sword. Because of this many people die withouteven knowing what hit them, for there attackers are such skilled theives that they can hit them unseen. The blade vibrates in the wielder's hand, thristly for lives to steal away. 
+
+PARAMÈTRES :
+
+Spécial :  Steals 2 hp and gives to wielder
+15% chance of killing victim
+Bonus à la classe d'armure :  1
+TACO :  +3 
+Dégâts :  1D6 +3
+Type de dégâts  perforant
+Poids : 3 
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type :  Arme à une main
+Nécessite : 5 en Force
+Non utilisable par :
+ Non-thieves~
+@38 = ~Siegfried’s Scorching Supplication~
+@39 = ~Siegfried’s Scorching Supplication(Invocation) 
+Niveau : 4
+Portée : Portée visuelle du lanceur
+Durée : Instantanée
+Temps d'incantation : 3 
+Zone d'effet : Une créature 
+Jet de sauvegarde : Aucun
+
+This spell raises the temperature around the target creature to unimaginable levels, causing the very air to ignite.  This causes 2d6+1 points of Dégâts  per 4 levels of the caster.(ie. 6d6+3 at level 8) to a max of 10d6+5 at level 20.~
+@40 = ~Épée longue~
+@41 = ~Green Destiny~
+@42 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. 
+
+PARAMÈTRES :
+
+Dégâts :  1D8
+Type de dégâts :  tranchant
+Poids : 4
+Facteur de vitesse : 5
+Type de compétence : Épée longue
+Type :  Arme à une main
+Nécessite : 6 en Force
+Non utilisable par :
+ Druide
+ Prêtre
+ Mage~
+@43 = ~This powerful long sword was used by the warrior Jen and made her almost unbeatable. Jen was only defeated by the master warrior Li.
+
+PARAMÈTRES :
+
+Capacités de combat :  Dispels magic whenever the sword strikes an opponent
+Capacité d'équipement : 
+ Haste
+Dégâts :  1D12 + 5
+TACO :  +5 bonus
+Type de dégâts :  tranchant
+Poids : 7
+Facteur de vitesse : 2
+Type de compétence : Épée longue
+Type :  Arme à une main
+Nécessite : 11 en Force
+Non utilisable par :
+ Druide
+ Prêtre
+ Mage
+ Personnage d'alignement Mauvais et Neutre~
+@44 = ~Dissipation des effets~
+@45 = ~Installation des sorts~
+@46 = ~Regard pernicieux~
+@47 = ~Souffle de Demi DracoLiche~
+@48 = ~Installation des créatures~
+@49 = ~Prêtre vampire~
+@50 = ~L'Effroyable~
+@51 = ~Demi DracoLiche~
+@52 = ~Individu Complètement Dingue~
+@53 = ~Portail~
+@54 = ~Résident~
+@55 = ~Spectre~
+@56 = ~Tyran mort~
+@57 = ~Crâne~
+@58 = ~Mage vampire~
+@59 = ~Installation des dialogues~
+@60 = ~Installation des scripts~
