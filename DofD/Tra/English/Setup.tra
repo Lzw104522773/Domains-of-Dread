@@ -1,3 +1,6 @@
+@9001 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+
 @0 = ~DofD~
 @1 = ~Installing Areas~
 @2 = ~Installing Bams~

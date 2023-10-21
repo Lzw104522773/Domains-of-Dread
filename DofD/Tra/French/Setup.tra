@@ -1,3 +1,6 @@
+@9001 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+
 @0 = ~DofD (Le Domaine de l'Effroi)~
 @1 = ~Installation des zones~
 @2 = ~Installation des Bams~
@@ -35,19 +38,30 @@ Owned by a Dragon Highlord, Verminaard, Nightbringer is a footman's Masse and a 
 Nightbringer may only be used by those of inherent evil.   
 Good people who use the Masse must save vs spells or be converted to evil. Paladins who pick up the Masse are slain, and rangers who touch it must save vs death or be slain.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Spécial : 50% chance of slaying a paladin on succesful hit.
-50% chance of level drain(save vs spells)
-Target must save vs spells at -2 or be permenatly blinded
+Capacités d'équipement : 
+- Tue instantanément les rôdeurs (jet de sauvegarde contre la paralysie, la mort et les poisons pour annuler)
+- Tue instantanément les paladins
+- Alignement modifié en chaotique mauvais de manière permanente (jet de sauvegarde contre les sorts pour annuler)
+
+Capacités de combat : 
+- Aveugle la cible de manière permanente (jet de sauvegarde à -2 contre les sorts pour annuler)
+- 51 % de chances de tuer instantanément les paladins
+- 49 % de chances de drainer 1 niveau à la cible de manière permanente (jet de sauvegarde contre les sorts pour annuler)
+
+Enchantement : +3
 TAC0 : +3
-Dégâts : 1D6 + 4
-Type de dégâts : Contondant
-Poids : 4
+Dégâts : 1d6 +4 (Contondant)
 Facteur de vitesse : 4
-Type de compétence : Masse
-Type : Arme à une main
-Nécessite : 7  en Force
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Nécessite : 
+- 7 en Force
+
+Poids : 4
+
 Non utilisable par :
  Druide
  Mage
@@ -73,15 +87,26 @@ Non utilisable par :
 
 This enchanted bow was the property of the god Cupid. He uses this bow to cause people to fall in love. This bow also seems to increase the attractiveness of the wielder. 
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Spécial :  Target must Save vs Spell or be charmed
-Charisme :  +5
-TAC0 : +5 bonus
-Poids : 2
+Capacités d'équipement : 
+- Attaque par round : Passe à 2
+- Charisme : +5
+
+Capacités de combat : 
+- Domination sur la cible pendant 3 heures (jet de sauvegarde contre les sorts pour annuler)
+
+Enchantement : +5
+TAC0 : +5
 Facteur de vitesse : 6
-Type de compétence : Short Bow
-Type :  2-handed
+Type de compétence : Arc court
+Type : Arme à 2 mains
+
+Nécessite : 
+- 6 en Force
+
+Poids : 2
+
 Non utilisable par :
  Druide
  Prêtre
@@ -91,30 +116,46 @@ Non utilisable par :
 @17 = ~Attaque~
 @18 = ~Dévore le cerveau~
 @19 = ~Anneau~
-@20 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
-@21 = ~Ring of Free Action:  'Edventar's Gift'
-This ring was given to the reef scavenger and hunter known only as Edventar, by a group of aquatic elves long his friends.  His help in routing the "Pirate Queen" Yenandra of Dambrath was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.
+@20 = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rarement, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.
 
-PARAMÈTRES :
+PARAMÈTRES :
 
-Spécial :  The wearer is immune to everything, magical and otherwise, that affects mobility in any way. This includes haste and slow spells.~
+Poids : 0~
+@21 = ~Anneau du Tyran
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Immunité contre les armes enchantées +1 et inférieures
+- Immunité contre les armes non-magiques
+- Permet au porteur d'attaquer une créature cachée ou invisible
+
+Poids : 0.~
 @22 = ~Dragon Claw~
 @23 = ~Masse of Terror~
 @24 = ~Masse of Terror +2
 This +2 heavy Masse has a potent spell-like ability allowing the wielder to envelop himself in a terrifying aura. His clothes and appearance are transformed into an illusion of darkest horror, such that all within 20 feet who view him must roll successful Will saving throws (DC 16) or be struck motionless with terror (treat as hold person). Those who succeed on their saves are shaken. Each time the Masse is used to cause terror, there is a 20% chance the wielder permanently loses 1 point from his Charisma score.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-TAC0 :  +2
-Dégâts :  1D6 + 3
-Type de dégâts :  Contondant
-Poids : 15
+Capacité de charge (3 fois par jour) : 
+- Manteau de terreur
+- 21 % de chances de réduire de 1 le charisme du porteur de manière permanente
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3 (Contondant)
 Facteur de vitesse : 7
-Type de compétence : Masse
-Type :  Arme à une main
-Nécessite : 15 en Force
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Nécessite : 
+- 15 en Force
+
+Poids : 15
+
 Non utilisable par :
- Druidee
+ Druide
  Mage
 Voleur~
 @25 = ~Modification du charisme~
@@ -135,11 +176,17 @@ Thief~
 
 This ivory mask has been fashioned into the likeness of a human skull. Once per day the mask can be loosed to fly from the wearer’s face. It travels up to 50 feet away from the wearer and attacks a target assigned to it. The grinning skull mask makes a touch attack against the target. If it succeeds, the target must make a Fortitude saving throw (DC 20) or be struck dead, as if affected by a finger of death spell. If the target succeeds at his saving throw, he nevertheless takes 3d6+13 points of Dégâts . After attacking (whether successful or not), the mask flies back to its user.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacité spéciale (une fois par jour) : Summon skull 
-Bonus à la classe d'armure : 1
-Poids :  2
+Capacités d'équipement : 
+- Protection contre les coups critiques
+- Classe d'armure : +1
+
+Capacités de charge : 
+- Invoque une créature (Crâne) de manière permanente (1 fois par jour)
+
+Poids : 2
+
 Non utilisable par :
  Mage
  Barde
@@ -166,15 +213,26 @@ Voleur~
 
 PARAMÈTRES :
 
-Spécial :  Identify items, five times a day cast True Sight
-TAC0 :  +4
-Dégâts :  1D8+4
-Type de dégâts :  tranchant
-Poids : 4
+Spécial :  Identifications des objets
+
+Capacités d'équipement : 
+- Connaissances : +500
+
+Capacités de charge : 
+- Vision véritable (comme un lanceur de sorts de niveau 10) (5 fois par jour)
+
+Enchantement : +4
+TAC0 : +4
+Dégâts : 1d8 +4 (Tranchant)
 Facteur de vitesse : 2
 Type de compétence : Épée bâtarde
-Type :  Arme à une main
-Nécessite : 11 en Force
+Type : Arme à 1 main
+
+Nécessite : 
+- 11 en Force
+
+Poids : 10
+
 Non utilisable par :
  Druide
  Prêtre
@@ -200,19 +258,28 @@ Non utilisable par :
 @37 = ~Soul Stealer
 These blades are only used by the greatest of theives, and are extremly rare. Soul Stealers are created on the Plane of Shadows by skilled mastersmiths. They are quite deadly and occasionally will instantly kill the unlucky victim with only a light touch of the sword. Because of this many people die withouteven knowing what hit them, for there attackers are such skilled theives that they can hit them unseen. The blade vibrates in the wielder's hand, thristly for lives to steal away. 
 
-PARAMÈTRES :
+PPARAMÈTRES : 
 
-Spécial :  Steals 2 hp and gives to wielder
-15% chance of killing victim
-Bonus à la classe d'armure :  1
-TACO :  +3 
-Dégâts :  1D6 +3
-Type de dégâts  perforant
-Poids : 3 
+Capacités d'équipement : 
+- Classe d'armure : +1
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+- Restaure 2 points de vie au porteur
+- 16 % de chances de dissoudre la cible
+
+Enchantement : +3
+TAC0 : +3
+Dégâts : 1d6 +3 (Perforant)
 Facteur de vitesse : 2
 Type de compétence : Épée courte
-Type :  Arme à une main
-Nécessite : 5 en Force
+Type : Arme à 1 main
+
+Nécessite : 
+- 5 en Force
+
+Poids : 3
+
 Non utilisable par :
  Non-thieves~
 @38 = ~Siegfried’s Scorching Supplication~
@@ -244,19 +311,30 @@ Non utilisable par :
  Mage~
 @43 = ~This powerful long sword was used by the warrior Jen and made her almost unbeatable. Jen was only defeated by the master warrior Li.
 
-PARAMÈTRES :
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Double la vitesse de déplacement et accorde une attaque supplémentaire par round
 
 Capacités de combat :  Dispels magic whenever the sword strikes an opponent
-Capacité d'équipement : 
- Haste
-Dégâts :  1D12 + 5
-TACO :  +5 bonus
-Type de dégâts :  tranchant
-Poids : 7
+
+- Dissipation de la magie sur la cible (les armes invoquées sont toujours dissipées)
+- Guérit la débilité mentale de la cible
+- Dissipe un sort de la sphère de combinaison sur la cible
+- Tue instantanément les illusions (jet de sauvegarde à -4 contre la paralysie, la mort et les poisons pour annuler)
+ 
+Enchantement : +5
+TAC0 : +5
+Dégâts : 1d12 +5 (Tranchant)
 Facteur de vitesse : 2
 Type de compétence : Épée longue
-Type :  Arme à une main
-Nécessite : 11 en Force
+Type : Arme à 1 main
+
+Nécessite : 
+- 11 en Force
+
+Poids : 7
+
 Non utilisable par :
  Druide
  Prêtre

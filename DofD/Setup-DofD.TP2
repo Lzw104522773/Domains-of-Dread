@@ -27,6 +27,9 @@ ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
         // noconvert_array = fl#noconvert
         reload_array = fl#reload
 	END
+
+INCLUDE ~DofD/Lib/gw_functions.tpa~	
+	
 END
 
 AUTO_TRA ~DofD/Tra/autotra/%s~
@@ -63,14 +66,14 @@ COPY ~DofD/Items/demapoc.itm~          ~override/demapoc.itm~
 COPY ~DofD/Items/demnight.itm~      ~override/demnight.itm~
   SAY NAME1 @7
   SAY NAME2 @8
-  SAY UNIDENTIFIED_DESC @9
-  SAY DESC @10
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@9" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@10" END
 
 COPY ~DofD/Items/demcup.itm~        ~override/demcup.itm~
   SAY NAME1 @11
   SAY NAME2 @12
-  SAY UNIDENTIFIED_DESC @13
-  SAY DESC @14
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@13" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@14" END 
 
 COPY ~DofD/Items/demokey.itm~       ~override/demokey.itm~
   SAY NAME1 @15
@@ -102,15 +105,15 @@ COPY ~DofD/Items/demdraco.itm~       ~override/demdraco.itm~
 COPY ~DofD/Items/demmater.itm~        ~override/demmater.itm~
   SAY NAME1 @7
   SAY NAME2 @23
-  SAY UNIDENTIFIED_DESC @9
-  SAY DESC @24
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@9" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@24" END
   SAY 0x1d6 @25
 
 COPY ~DofD/Items/demskull.itm~       ~override/demskull.itm~
   SAY NAME1 @26
   SAY NAME2 @27
-  SAY UNIDENTIFIED_DESC @28
-  SAY DESC @29
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@28" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@29" END 
 
 COPY ~DofD/Items/demcrys.itm~       ~override/demcrys.itm~
   SAY NAME1 @30
@@ -121,8 +124,8 @@ COPY ~DofD/Items/demcrys.itm~       ~override/demcrys.itm~
 COPY ~DofD/Items/demsoul.itm~        ~override/demsoul.itm~
   SAY NAME1 @34
   SAY NAME2 @35
-  SAY UNIDENTIFIED_DESC @36
-  SAY DESC @37
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@36" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@37" END 
 
 COPY ~DofD/Items/demi4so.itm~       ~override/demi4so.itm~
   SAY NAME1 @38
@@ -132,8 +135,8 @@ COPY ~DofD/Items/demi4so.itm~       ~override/demi4so.itm~
 COPY ~DofD/Items/demsw1h.itm~        ~override/demsw1h.itm~
   SAY NAME1 @40
   SAY NAME2 @41
-  SAY UNIDENTIFIED_DESC @42
-  SAY DESC @43
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@42" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@43" END 
   SAY 0x1fe @44
 
 
