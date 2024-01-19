@@ -282,3 +282,9 @@ Not Usable By:
 @58 = ~Vampiric Mage~
 @59 = ~Installing Dialogs~
 @60 = ~Installing scripts~
+
+
+
+// Cutscene Addition
+@100 = ~Add another, easier way to access the Domains of Dread~
+@101 = ~Require DofD Main componant~

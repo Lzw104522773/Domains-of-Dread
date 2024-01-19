@@ -1,7 +1,7 @@
 BACKUP ~DofD/backup~ 
 AUTHOR ~XXXXXXXXXX~
 
-VERSION ~v3~
+VERSION ~v3.5~
 
 README ~DofD/readme/ReadMe.%LANGUAGE%.txt~ ~DofD/readme/ReadMe.English.txt~
 
@@ -33,18 +33,30 @@ INCLUDE ~DofD/Lib/gw_functions.tpa~
 END
 
 AUTO_TRA ~DofD/Tra/autotra/%s~
+
 LANGUAGE ~English~ ~English~
          ~DofD/Tra/English/Setup.tra~
+		 
 LANGUAGE ~Russian (translation aerie.ru)~ ~Russian~
          ~DofD/Tra/Russian/Setup.tra~
+		 
 LANGUAGE ~German (Uebersetzung von Ruebezahl)~ ~German~
          ~DofD/Tra/German/Setup.tra~
+		 
 LANGUAGE ~Italian (translation by Stoneangel~ ~Italian~
          ~DofD/Tra/Italian/Setup.tra~
+		 
 LANGUAGE ~French~ ~French~
+        // ~DofD/Tra/French/DEMDARK.tra~
+        // ~DofD/Tra/French/DEMDARK1.tra~
+        // ~DofD/Tra/French/DEMDUD.tra~
+        // ~DofD/Tra/French/DEMOPORT.tra~
          ~DofD/Tra/French/Setup.tra~
+        // ~DofD/Tra/French/Demdud2.tra~
 
 BEGIN  @0
+DESIGNATED 0
+LABEL ~DofD-Main~
 
 PRINT  @1
 
@@ -118,8 +130,8 @@ COPY ~DofD/Items/demskull.itm~       ~override/demskull.itm~
 COPY ~DofD/Items/demcrys.itm~       ~override/demcrys.itm~
   SAY NAME1 @30
   SAY NAME2 @31
-  SAY UNIDENTIFIED_DESC @32
-  SAY DESC @33
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@32" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@33" END 
 
 COPY ~DofD/Items/demsoul.itm~        ~override/demsoul.itm~
   SAY NAME1 @34
@@ -147,10 +159,10 @@ COPY ~DofD/Spells/demapoc.spl~         ~override/demapoc.spl~
   SAY NAME1 @5
   SAY UNIDENTIFIED_DESC @6
 
-COPY ~DofD/Spells/SPCL998.spl~      ~override/SPCL998.spl~
+COPY ~DofD/Spells/SPCL998.spl~      ~override/dem998.spl~
   SAY NAME1 @46
 
-COPY ~DofD/Spells/SPCL999.spl~      ~override/SPCL999.spl~
+COPY ~DofD/Spells/SPCL999.spl~      ~override/dem999.spl~
   SAY NAME1 @47
 
 COPY ~DofD/Spells/demi4so.spl~      ~override/demi4so.spl~
@@ -163,6 +175,7 @@ PRINT  @48
 COPY ~DofD/Cre/demClva.cre~        ~override/demClva.cre~
   SAY NAME1 @49
   SAY NAME2 @49
+  WRITE_ASCII 0x260 ~demClva~ (8) // General cript
   WRITE_ASCII 0x280 ~demClva~ (8) // Script name / Death variable
 
 COPY ~DofD/Cre/demdark.cre~         ~override/demdark.cre~
@@ -180,7 +193,6 @@ COPY ~DofD/Cre/demdrac.cre~         ~override/demdrac.cre~
 COPY ~DofD/Cre/dementy.cre~         ~override/dementy.cre~
   SAY NAME1 @52
   SAY NAME2 @52
-  WRITE_ASCII 0x248 ~Demdud~ (8) // Override script
   WRITE_ASCII 0x250 ~MAGE4A~ (8) // Class cript
   WRITE_ASCII 0x258 ~SHOUT~ (8) // Race script
 
@@ -203,20 +215,56 @@ COPY ~DofD/Cre/demtyra.cre~         ~override/demtyra.cre~
 COPY ~DofD/Cre/demskull.cre~        ~override/demskull.cre~
   SAY NAME1 @57
   SAY NAME2 @57
+  WRITE_ASCII 0x250 ~Demskull~ (8) // Class cript
 
 COPY ~DofD/Cre/demMava.cre~         ~override/demMava.cre~
   SAY NAME1 @58
   SAY NAME2 @58
+  WRITE_ASCII 0x260 ~demMava~ (8) // General cript
   WRITE_ASCII 0x280 ~demMava~ (8) // Script name / Death variable
 
 
 PRINT @59
 
-COMPILE ~DofD\Dlg~
+COMPILE ~DofD/Dlg~
 
 PRINT @60
 
 EXTEND_TOP ~ar0700.bcs~                 ~DofD/BAF/Ar0700.BAF~
 EXTEND_TOP ~ar0702.bcs~                 ~DofD/BAF/Ar0702.BAF~
 
-COMPILE ~DofD\Scripts~
+COMPILE ~DofD/Scripts~
+
+
+
+// Cutscene Addition
+
+BEGIN @100 /* Add another, easier way to access the Domain of Dread*/
+DESIGNATED 100
+LABEL ~DofD-Cutscene~
+REQUIRE_COMPONENT ~Setup-DofD.tp2~ ~0~ @101
+
+COPY_EXISTING ~dementy.cre~         ~override/dementy.cre~
+  WRITE_ASCII 0x248 ~Demdud~ (8) // Override script
+
+COMPILE ~DofD/Addition/DEMAdd.d~
+
+
+// Note : Something I don't really understand and that could create issue in other cases....
+
+/* If Demdud.baf compiled in second componant, wrong encodage arise for @11 (demdud.tra...) So Demdud.baf compiled in main componant and activated by applying Override script Demdud to Demdud.cre */
+
+/* Alternative is to use the streff with setup.tra */
+
+/* ...It's related to AUTO_TRA... */
+
+/*
+
+COPY_EXISTING ~dementy.cre~         ~override/dementy.cre~
+  WRITE_ASCII 0x248 ~DEMDUD2~ (8) // Override script
+
+COMPILE ~DofD/Addition/DEMAdd.d~
+
+COMPILE ~DofD/Addition/DEMDUD2.baf~
+
+*/

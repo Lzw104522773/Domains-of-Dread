@@ -1,28 +1,28 @@
 IF
-	GlobalGT("Demodia","GLOBAL",3)
+	GlobalGT("Demodia","GLOBAL",4)
 THEN
 	RESPONSE #100
 		MoveBetweenAreas("AR0702",[762.886],9)
 END
 
 IF
-	Global("Demodia","GLOBAL",1)
+	Global("Demodia","GLOBAL",2)
 THEN
 	RESPONSE #100
 		StartCutSceneMode()
 		ClearAllActions()
-		SetGlobal("Demodia","GLOBAL",2)
-		MoveViewPoint([520.389],BD_NORMAL)
+		SetGlobal("Demodia","GLOBAL",3)
+		MoveViewPoint([520.389],4) // BD_NORMAL
 		MoveToPointNoInterrupt([1046.785])
 		ActionOverride(LastTalkedToBy,DisplayStringHead(Myself,#46077))
 		Wait(1)
-		ActionOverride(Player1,MoveToPointNoInterrupt([1046.785]))
-		ActionOverride(Player2,MoveToPointNoInterrupt([1046.785]))
-		ActionOverride(Player3,MoveToPointNoInterrupt([1046.785]))
-		ActionOverride(Player4,MoveToPointNoInterrupt([1046.785]))
-		ActionOverride(Player5,MoveToPointNoInterrupt([1046.785]))
-		ActionOverride(Player6,MoveToPointNoInterrupt([1046.785]))
-		MoveViewPoint([1046.785],BD_WALK)
+		ActionOverride(Player1,MoveToPoint([1046.785]))
+		ActionOverride(Player2,MoveToPoint([1046.785]))
+		ActionOverride(Player3,MoveToPoint([1046.785]))
+		ActionOverride(Player4,MoveToPoint([1046.785]))
+		ActionOverride(Player5,MoveToPoint([1046.785]))
+		ActionOverride(Player6,MoveToPoint([1046.785]))
+		MoveViewPoint([1046.785],6) // BD_WALK
 		Wait(3)
 		FadeToColor([30.0],0)
 		Wait(2)
@@ -33,9 +33,9 @@ THEN
 		ActionOverride(Player5,LeaveAreaLUA("AR0700","",[1958.1602],50))
 		ActionOverride(Player6,LeaveAreaLUA("AR0700","",[2131.1501],50))
 		ActionOverride(Player1,LeaveAreaLUA("AR0700","",[1787.1547],50))
+		FadeFromColor([30.0],0)
 		Wait(3)
 		MoveViewPoint([1852.1459],INSTANT)
-		FadeFromColor([30.0],0)
 		MoveToPointNoInterrupt([1700.1350])
 		ActionOverride(Player1,MoveToPointNoInterrupt([1666.1407]))
 		Wait(1)
@@ -56,7 +56,7 @@ THEN
 		DestroyItem("MISC42")
 		Wait(3)
 		EndCutSceneMode()
-		SetGlobal("Demodia","GLOBAL",3)
+		SetGlobal("Demodia","GLOBAL",4)
 		DisplayStringHead(Myself,@11)
 		Wait(2)
 END

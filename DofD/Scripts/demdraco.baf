@@ -49,7 +49,8 @@ THEN
   RESPONSE #100
     ForceSpell(LastSeenBy(Myself),WIZARD_LOWER_RESISTANCE)
     ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
-    ForceSpell(LastSeenBy(Myself),4998)
+    //ForceSpell(LastSeenBy(Myself),4998)
+	ReallyForceSpellRES("dem998",LastSeenBy(Myself))
     Continue()
 END
 
@@ -127,7 +128,8 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("WingBuffet","LOCALS",0)
-    ForceSpell(LastSeenBy(Myself),4999)
+    //ForceSpell(LastSeenBy(Myself),4999)
+	ReallyForceSpellRES("dem999",LastSeenBy(Myself))
     SetGlobalTimer("Dragli1","GLOBAL",20)
     Continue()
 END
@@ -140,7 +142,8 @@ THEN
   RESPONSE #100
     SetGlobal("WingBuffet","LOCALS",0)
     ForceSpell(LastSeenBy(Myself),WIZARD_CHAIN_LIGHTNING)
-    ForceSpell(LastSeenBy(Myself),4998)
+    //ForceSpell(LastSeenBy(Myself),4998)
+	ReallyForceSpellRES("dem998",LastSeenBy(Myself))
     SetGlobalTimer("Dragli","GLOBAL",20)
     Continue()
 END
@@ -152,7 +155,8 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("WingBuffet","LOCALS",0)
-    ForceSpell(LastSeenBy(Myself),4999)
+    //ForceSpell(LastSeenBy(Myself),4999)
+	ReallyForceSpellRES("dem999",LastSeenBy(Myself))
     SetGlobalTimer("Dragli1","GLOBAL",18)
     Continue()
 END
@@ -237,7 +241,8 @@ IF
 THEN
   RESPONSE #100
     ForceSpell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_STUN)
-    ForceSpell(LastSeenBy(Myself),4998)
+    //ForceSpell(LastSeenBy(Myself),4998)
+	ReallyForceSpellRES("dem998",LastSeenBy(Myself))
     SetGlobal("StunPerson","LOCALS",1)
     Continue()
 END
@@ -275,7 +280,8 @@ THEN
   RESPONSE #10
     ForceSpell(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
     ForceSpell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
-    ForceSpell(LastSeenBy(Myself),4998)
+    //ForceSpell(LastSeenBy(Myself),4998)
+	ReallyForceSpellRES("dem998",LastSeenBy(Myself))
     Continue()
 END
 

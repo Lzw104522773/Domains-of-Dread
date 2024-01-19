@@ -286,3 +286,9 @@ THACO:  +5 бонус
 @58 = ~Маг-вампир~
 @59 = ~Installing Dialogs~
 @60 = ~Installing scripts~
+
+
+
+// Cutscene Addition
+@100 = ~Add another, easier way to access the Domains of Dread~
+@101 = ~Require DofD Main componant~

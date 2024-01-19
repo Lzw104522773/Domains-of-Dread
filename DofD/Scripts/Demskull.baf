@@ -2,11 +2,11 @@ IF
   OnCreation()
 THEN
   RESPONSE #100
-    SetGlobal("skullde","GLOBAL",0)
+    SetGlobal("Demskullde","GLOBAL",0)
 END
 
 IF
-  Global("skullde","GLOBAL",1)
+  Global("Demskullde","GLOBAL",1)
 THEN
   RESPONSE #100
     DestroySelf()
@@ -26,6 +26,6 @@ IF
 THEN
   RESPONSE #100
     ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
-    SetGlobal("skullde","GLOBAL",1)
+    SetGlobal("Demskullde","GLOBAL",1)
 END
 

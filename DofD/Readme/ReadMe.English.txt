@@ -23,3 +23,14 @@ Version 3 (13 November 2009)
 - Added Italian translation by Stoneangel
 - Changed to README command
 - Updated to WeiDU v211
+   
+Version 3.5 (Janvier 2023)   
+- Added French translation
+- Correction for items         
+- New componant : Add another, easier way to access the Domain of Dread        
+- Prevent duplicate dialogs
+- Autotra        
+- Prefixes
+- Gw fonction for items description 
+- Metadata / Label
+- Add InfinityAutoPackager     
