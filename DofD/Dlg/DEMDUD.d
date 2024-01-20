@@ -1,6 +1,11 @@
 BEGIN ~DEMDUD~ 
 
-IF ~True()~ THEN BEGIN 0 // from:
+IF ~Global("DemoTravI6","GLOBAL",1)~ THEN BEGIN 100 // from: 0.1
+  SAY @11 
+  IF ~~ THEN EXIT
+END
+
+IF ~True() !Global("DemoTravI6","GLOBAL",1)~ THEN BEGIN 0 // from:
   SAY @0 
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 6
@@ -29,11 +34,14 @@ END
 IF ~~ THEN BEGIN 5 // from: 4.0
   SAY @10
   IF ~Global("Demodia","GLOBAL",0)~ THEN DO ~SetGlobal("Demodia","GLOBAL",1)~ EXIT
-  IF ~ !PartyHasItem("MISC42") GlobalGT("Demodia","GLOBAL",0)
-~ THEN EXIT
+  IF ~See(Player1) PartyHasItem("MISC42") Global("Demodia","GLOBAL",1)~ THEN DO ~SetGlobal("Demodia","GLOBAL",2)~ EXIT
+  IF ~!See(Player1) PartyHasItem("MISC42") Global("Demodia","GLOBAL",1)~ THEN EXIT
+  IF ~!PartyHasItem("MISC42") Global("Demodia","GLOBAL",1)~ THEN EXIT
+  IF ~GlobalGT("Demodia","GLOBAL",1)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 0.1
   SAY @11 
   IF ~~ THEN EXIT
 END
+

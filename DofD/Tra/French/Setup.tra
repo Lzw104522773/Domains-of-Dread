@@ -340,7 +340,7 @@ PARAMÈTRES :
 - Inflige 5 points de dégâts de feu à la cible
 - Inflige 10d6 points de dégâts de feu à la cible~
 @40 = ~Épée longue~
-@41 = ~Green Destiny~
+@41 = ~Épée d'émeraude~
 @42 = ~Ces épées sont généralement appelées épées à double tranchant, épées de guerre ou épées militaires. Certaines épées longues peuvent avoir une lame à simple tranchant, mais la plupart ont une lame à double tranchant ainsi qu'un estoc pointu et acéré. Il n'existe pas de version type : le modèle et la longueur de l'épée varient d'un peuple à un autre et parfois même d'une époque à une autre. L'une des caractéristiques communes à toutes les épées de ce type est la longueur, comprise entre 90 centimètres et 1,20 mètre. Dans le cas des épées les plus longues, la lame peut atteindre jusqu'à un mètre de la longueur totale de l'arme. Malgré son extrémité pointue, cette arme est conçue pour frapper de taille, et non d'estoc. De ce fait, l'épée longue est une arme considérée comme tranchante, et non perforante.
 
 PARAMÈTRES :
@@ -357,15 +357,16 @@ Non utilisable par :
  Druide
  Prêtre
  Mage~
-@43 = ~La légende raconte que cette puissante épée longue était utilisée par une championne épéiste Jen, la rendant presque imbattable. Jen aurait tout de même fini par être vaincue par un grand maître prénommé Li.
+@43 = ~L'émeraude du destin
+
+La légende raconte que cette puissante épée longue était utilisée par une championne épéiste Jen, la rendant presque imbattable. Jen aurait tout de même fini par être vaincue par un grand maître prénommé Li.
 
 PARAMÈTRES : 
 
 Capacités d'équipement : 
 - Double la vitesse de déplacement et accorde une attaque supplémentaire par round
 
-Capacités de combat :  Dissipation de la magie à chaque attaque réussie.
-
+Capacités de combat :
 - Dissipation de la magie à chaque attaque réussie.
 - Dissipe instantanément les illusions (jet de sauvegarde à -4 contre la paralysie, la mort et les poisons pour annuler)
  

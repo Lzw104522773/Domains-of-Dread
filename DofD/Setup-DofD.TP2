@@ -169,6 +169,9 @@ COPY ~DofD/Spells/demi4so.spl~      ~override/demi4so.spl~
   SAY NAME1 @38
   SAY UNIDENTIFIED_DESC @39
 
+COPY ~DofD/Spells/dem119.spl~      ~override/dem119.spl~
+  SAY NAME1 @12
+
 PRINT  @48
 
 
@@ -193,6 +196,7 @@ COPY ~DofD/Cre/demdrac.cre~         ~override/demdrac.cre~
 COPY ~DofD/Cre/dementy.cre~         ~override/dementy.cre~
   SAY NAME1 @52
   SAY NAME2 @52
+  WRITE_ASCII 0x248 ~~ (8) // Override script
   WRITE_ASCII 0x250 ~MAGE4A~ (8) // Class cript
   WRITE_ASCII 0x258 ~SHOUT~ (8) // Race script
 
@@ -247,7 +251,7 @@ REQUIRE_COMPONENT ~Setup-DofD.tp2~ ~0~ @101
 COPY_EXISTING ~dementy.cre~         ~override/dementy.cre~
   WRITE_ASCII 0x248 ~Demdud~ (8) // Override script
 
-COMPILE ~DofD/Addition/DEMAdd.d~
+// COMPILE ~DofD/Addition/DEMAdd.d~
 
 
 // Note : Something I don't really understand and that could create issue in other cases....

@@ -19,7 +19,7 @@ in Adventure's Mart speak to the Utterly Insane Person, he will tell you a riddl
 the answer will lead you to a pack of really tough battles.
 Those who survive will get the reward.
 
-### Main componant :
+### Second componant :
 
 Add a cutscene if player can't find is way to the Domains of Dread, just talk to the Utterly Insane Person again with a certain piece of jewelry.
 
