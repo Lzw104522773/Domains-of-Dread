@@ -67,6 +67,9 @@ PRINT  @2
 
 COPY ~DofD/Bam/demHEOLY.bam~         ~override/demHEOLY.bam~
 COPY ~DofD/Bam/demiswc.bam~        ~override/demiswc.bam~
+COPY ~DofD/Bam/demRL01.bam~        ~override/demRL01.bam~
+COPY ~DofD/Bam/demL01C.bam~        ~override/demL01C.bam~
+COPY ~DofD/Bam/demRL68.bam~        ~override/demRL68.bam~
 
 PRINT  @3
       
@@ -74,6 +77,7 @@ COPY ~DofD/Items/demapoc.itm~          ~override/demapoc.itm~
   SAY NAME1 @4
   SAY NAME2 @5
   SAY DESC @6
+  WRITE_ASCII 0x3a ~demRL01~ (8) // bam icon
 
 COPY ~DofD/Items/demnight.itm~      ~override/demnight.itm~
   SAY NAME1 @7
@@ -143,6 +147,7 @@ COPY ~DofD/Items/demi4so.itm~       ~override/demi4so.itm~
   SAY NAME1 @38
   SAY NAME2 @38
   SAY DESC @39
+  WRITE_ASCII 0x3a ~demRL68~ (8) // bam icon
 
 COPY ~DofD/Items/demsw1h.itm~        ~override/demsw1h.itm~
   SAY NAME1 @40
@@ -158,6 +163,7 @@ PRINT  @45
 COPY ~DofD/Spells/demapoc.spl~         ~override/demapoc.spl~
   SAY NAME1 @5
   SAY UNIDENTIFIED_DESC @6
+  WRITE_ASCII 0x3a ~demL01C~ (8) // spell icon
 
 COPY ~DofD/Spells/SPCL998.spl~      ~override/dem998.spl~
   SAY NAME1 @46
@@ -199,6 +205,7 @@ COPY ~DofD/Cre/dementy.cre~         ~override/dementy.cre~
   WRITE_ASCII 0x248 ~~ (8) // Override script
   WRITE_ASCII 0x250 ~MAGE4A~ (8) // Class cript
   WRITE_ASCII 0x258 ~SHOUT~ (8) // Race script
+  WRITE_ASCII 0x2CC ~Demdud~ (8) // Dialog
 
 COPY ~DofD/Cre/demport.cre~         ~override/demport.cre~
   SAY NAME1 @53
