@@ -52,7 +52,8 @@ Version 3 (13 November 2009)
    
 Version 3.5 (Janvier 2023)   
 - Added French translation
-- Correction for items         
+- Corrections for items         
+- Corrections for scrolls   
 - New componant : Add another, easier way to access the Domain of Dread        
 - Prevent duplicate dialogs
 - Autotra        
